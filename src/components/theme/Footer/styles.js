@@ -38,7 +38,7 @@ export const Links = styled.div`
 
     &:first-child,
     &:last-child {
-      margin: 0;
+      margin: 10;
     }
   }
 `;

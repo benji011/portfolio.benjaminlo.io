@@ -31,7 +31,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    color: ${({ theme }) => (theme === 'light' ? '#2d2d2d' : '#fff')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -46,7 +46,7 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#e6e6e6')};
+    color: ${({ theme }) => (theme === 'light' ? '#2d2d2d' : '#e6e6e6')};
 
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -55,6 +55,7 @@ export const Details = styled.div`
     @media (max-width: 680px) {
       font-size: 26pt;
     }
+    max-width: 500px;
   }
 `;
 
