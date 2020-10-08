@@ -69,6 +69,16 @@ export const Details = styled.div`
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
+
+  .dark-btn {
+    background-color: #272c3e;
+    color: #fff;
+  }
+
+  .light-btn {
+    background-color: #fff;
+    color: #272c3e;
+  }
 `;
 
 export const Thumbnail = styled.div`

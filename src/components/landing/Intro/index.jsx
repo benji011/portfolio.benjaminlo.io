@@ -17,13 +17,13 @@ export const Intro = () => {
         <IntroWrapper as={Container}>
           <Details theme={theme}>
             <h1>Hi There!</h1>
-            <h4>I’m Ben and I’m a full stack software engineer!</h4>
-            <Button as={AnchorLink} href="#contact">
+            <h4>I’m Ben and I’m a full stack engineer!</h4>
+            <Button className="dark-btn" as={AnchorLink} href="#contact">
               Hire me
             </Button>
           </Details>
           <Thumbnail>
-            <img src={(theme === 'light' ? dev_light : dev_dark)} alt="I’m Ben and I’m a full stack software engineer!" />
+            <img src={(theme === 'light' ? dev_light : dev_dark)} alt="I’m Ben and I’m a full stack engineer!" />
           </Thumbnail>
         </IntroWrapper>
       </DarkWrapper>
@@ -35,13 +35,13 @@ export const Intro = () => {
         <IntroWrapper as={Container}>
           <Details theme={theme}>
             <h1>Hi There!</h1>
-            <h4>I’m Ben and I’m a full stack software engineer!</h4>
-            <Button as={AnchorLink} href="#contact">
+            <h4>I’m Ben and I’m a full stack engineer!</h4>
+            <Button className="light-btn" as={AnchorLink} href="#contact">
               Hire me
             </Button>
           </Details>
           <Thumbnail>
-            <img src={(theme === 'light' ? dev_light : dev_dark)} alt="I’m Ben and I’m a full stack software engineer!" />
+            <img src={(theme === 'light' ? dev_light : dev_dark)} alt="I’m Ben and I’m a full stack engineer!" />
           </Thumbnail>
         </IntroWrapper>
       </Wrapper>

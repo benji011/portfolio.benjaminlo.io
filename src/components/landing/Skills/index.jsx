@@ -22,7 +22,7 @@ export const Skills = () => {
               I am an AWS certified full stack software engineer with 7+ years of demonstratable experience & ability in the industry creating web apps, design and deploy them to be highly available, highly scalable (on demand) and effectively reduce cost with maximum efficiency into your business.
             </p>
 
-            <Button as={AnchorLink} href="#contact">
+            <Button className="dark-btn" as={AnchorLink} href="#contact">
               Hire me
             </Button>
           </Details>
@@ -42,7 +42,7 @@ export const Skills = () => {
               I am an AWS certified full stack software engineer with 7+ years of demonstratable experience & ability in the industry creating web apps, design and deploy them to be highly available, highly scalable (on demand) and effectively reduce cost with maximum efficiency into your business.
             </p>
 
-            <Button as={AnchorLink} href="#contact">
+            <Button className="light-btn" as={AnchorLink} href="#contact">
               Hire me
             </Button>
           </Details>

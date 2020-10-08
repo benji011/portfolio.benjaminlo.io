@@ -5,6 +5,14 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .light-link {
+    color: #000;
+  }
+
+  .dark-link {
+    color: #fff;
+  }
 `;
 
 export const Brand = styled.a`

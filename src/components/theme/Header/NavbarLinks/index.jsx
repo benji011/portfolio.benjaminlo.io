@@ -9,10 +9,11 @@ const NavbarLinks = ({ desktop }) => {
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
-      <AnchorLink href="#about">About</AnchorLink>
-      <AnchorLink href="#projects">Projects</AnchorLink>
-      <AnchorLink href="#resume">Resume</AnchorLink>
-      <AnchorLink href="#contact">Contact</AnchorLink>
+      {console.log(theme)}
+      <AnchorLink className={(theme) === "light" ? "dark-link" : "light-link"} href="#about">About</AnchorLink>
+      <AnchorLink className={(theme) === "light" ? "dark-link" : "light-link"} href="#projects">Projects</AnchorLink>
+      <AnchorLink className={(theme) === "light" ? "dark-link" : "light-link"} href="#resume">Resume</AnchorLink>
+      <AnchorLink className={(theme) === "light" ? "dark-link" : "light-link"} href="#contact">Contact</AnchorLink>
       <ToggleTheme />
     </Wrapper>
   )
