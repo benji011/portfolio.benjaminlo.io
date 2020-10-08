@@ -1,4 +1,6 @@
 import React, { useContext } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
@@ -13,21 +15,24 @@ export const Resume = () => {
     <Wrapper id="resume">
       <ResumeWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Experience</h1>
-          <ul>
-            <li>
-              <h4>beBit inc</h4>
-              <p>
-                ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-              </p>
-            </li>
-            <li>
-              <h4>ikkai inc</h4>
-              <p>
-                ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-              </p>
-            </li>
-          </ul>
+          <h1>Resume</h1>
+          <Tabs>
+            <TabList>
+              <Tab>Experience</Tab>
+              <Tab>Education</Tab>
+              <Tab>Technologies</Tab>
+            </TabList>
+
+            <TabPanel>
+              <h2>Any content 1</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>Any content 2</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>Any content 3</h2>
+            </TabPanel>
+          </Tabs>
         </Details>
         <Thumbnail>
           <img src={(theme === 'light' ? resume_light : resume_dark)} alt="I’m Ben and I’m a Backend & Devops engineer!" />
