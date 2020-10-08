@@ -29,13 +29,18 @@
     "react-dom": "^16.11.0",
     "react-google-recaptcha": "^1.0.5",
     "react-helmet": "^5.2.0",
+    "react-tabs": "^3.1.1",
     "styled-components": "^4.1.3",
     "yup": "^0.26.6"
   },
   "keywords": [
     "gatsby",
     "portfolio",
-    "developer"
+    "developer",
+    "benjamin",
+    "lo",
+    "england",
+    "fukuoka"
   ],
   "license": "MIT",
   "scripts": {

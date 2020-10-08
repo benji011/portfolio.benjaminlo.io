@@ -604,7 +604,7 @@ export const Global = createGlobalStyle`
       padding: 0;
       font-family: 'Roboto', Helvetica, sans-serif;
       color: ${({ theme }) => (theme === 'light' ? 'hsla(0, 0%, 0%, 0.8)' : '#fff')};
-      background-color: ${({ theme }) => (theme === 'light' ? '#b5dbea' : '#272c3e')};
+      background-color: ${({ theme }) => (theme === 'light' ? '#fff' : '#272c3e')};
       transition: .3s all;
       font-weight: normal;
       word-wrap: break-word;

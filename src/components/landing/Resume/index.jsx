@@ -27,18 +27,6 @@ export const Resume = () => {
                 ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
               </p>
             </li>
-            <li>
-              <h4>beBit inc</h4>
-              <p>
-                ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-              </p>
-            </li>
-            <li>
-              <h4>ikkai inc</h4>
-              <p>
-                ipsum lorem ipsum lorem ipsum lorem ipsum lorem 
-              </p>
-            </li>
           </ul>
         </Details>
         <Thumbnail>
