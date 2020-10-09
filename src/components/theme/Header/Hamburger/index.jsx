@@ -8,9 +8,9 @@ const Hamburger = ({ sidebar, toggle }) => {
   
   return (
     <Wrapper sidebar={sidebar} onClick={() => toggle(!sidebar)}>
-      <Bar top sidebar={sidebar} theme={theme}/>
-      <Bar mid sidebar={sidebar} theme={theme} />
-      <Bar bottom sidebar={sidebar} theme={theme} />
+      <Bar className={(theme === "light") ? "light" : "dark"} top sidebar={sidebar} theme={theme}/>
+      <Bar className={(theme === "light") ? "light" : "dark"} mid sidebar={sidebar} theme={theme} />
+      <Bar className={(theme === "light") ? "light" : "dark"} bottom sidebar={sidebar} theme={theme} />
     </Wrapper>
   )
 };
