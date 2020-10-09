@@ -72,11 +72,21 @@ export const Details = styled.div`
   .dark-btn {
     background-color: #272c3e;
     color: #fff;
+
+    @media (max-width: 760px) {
+      background-color: #fff;
+      color: #272c3e;
+    }
   }
 
   .light-btn {
     background-color: #fff;
     color: #272c3e;
+
+    @media (max-width: 760px) {
+      background-color: #272c3e;
+      color: #fff;
+    }
   }
 `;
 

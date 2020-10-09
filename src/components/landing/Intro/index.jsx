@@ -23,7 +23,7 @@ export const Intro = () => {
             </Button>
           </Details>
           <Thumbnail>
-            <img src={(theme === 'light' ? dev_light : dev_dark)} alt="I’m Ben and I’m a full stack engineer!" />
+            <img src={dev_light} alt="I’m Ben and I’m a full stack engineer!" />
           </Thumbnail>
         </IntroWrapper>
       </DarkWrapper>
@@ -41,7 +41,7 @@ export const Intro = () => {
             </Button>
           </Details>
           <Thumbnail>
-            <img src={(theme === 'light' ? dev_light : dev_dark)} alt="I’m Ben and I’m a full stack engineer!" />
+            <img src={dev_dark} alt="I’m Ben and I’m a full stack engineer!" />
           </Thumbnail>
         </IntroWrapper>
       </Wrapper>

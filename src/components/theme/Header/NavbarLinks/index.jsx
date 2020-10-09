@@ -9,7 +9,6 @@ const NavbarLinks = ({ desktop }) => {
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
-      {console.log(theme)}
       <AnchorLink className={(theme) === "light" ? "dark-link" : "light-link"} href="#about">About</AnchorLink>
       <AnchorLink className={(theme) === "light" ? "dark-link" : "light-link"} href="#projects">Projects</AnchorLink>
       <AnchorLink className={(theme) === "light" ? "dark-link" : "light-link"} href="#resume">Resume</AnchorLink>

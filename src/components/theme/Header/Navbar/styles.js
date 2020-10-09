@@ -19,6 +19,7 @@ export const Brand = styled.a`
   color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
 
   @media (max-width: 960px) {
-    mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+    mix-blend-mode: difference;
+    color: #fff;
   }
 `;
