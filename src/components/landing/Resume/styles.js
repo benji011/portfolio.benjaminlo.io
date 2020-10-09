@@ -59,6 +59,17 @@ export const Details = styled.div`
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
+
+  .light-tab > li {
+    background-color: #fff;
+    text-decoration: none;
+  }
+
+  .dark-tab > li {
+    background-color: #272c3e;
+    color: #fff !important;
+    text-decoration: none;
+  }
 `;
 
 export const Thumbnail = styled.div`
