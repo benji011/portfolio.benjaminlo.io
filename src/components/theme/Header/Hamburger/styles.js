@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
   }
 
   .burger-menu {
-    mix-blend-mode: difference;
+    filter: invert(100%) brightness(100%);
   }
 
   ${({ sidebar }) =>
