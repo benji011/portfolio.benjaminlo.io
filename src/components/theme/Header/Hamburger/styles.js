@@ -13,14 +13,8 @@ export const Wrapper = styled.div`
     display: block;
   }
 
-  .light {
-    background-color: #fff;
-    box-shadow: 0 0px 5px 0 rgb(0,0,1);
-  }
-
-  .dark {
-    background-color: #212121;
-    box-shadow: 0 1px 5px 0 rgb(255, 255, 255);
+  .burger-menu {
+    mix-blend-mode: difference;
   }
 
   ${({ sidebar }) =>
