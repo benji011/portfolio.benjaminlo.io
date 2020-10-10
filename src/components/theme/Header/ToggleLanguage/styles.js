@@ -20,6 +20,10 @@ export const Wrapper = styled.button`
   }
 
   .icon {
-    max-width: 25px;
+    max-width: 35px;
+
+    @media (max-width: 960px) {
+      margin-bottom: 10px;
+    }
   }
 `;

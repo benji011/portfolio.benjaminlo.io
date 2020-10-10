@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import translateDark from 'assets/icons/translate_dark.svg';
-import translateLight from 'assets/icons/translate_light.svg';
+import translateDark from 'assets/icons/translation_dark.svg';
+import translateLight from 'assets/icons/translation_light.svg';
 import { Wrapper } from './styles';
 import { useTranslation } from 'react-i18next';
 
