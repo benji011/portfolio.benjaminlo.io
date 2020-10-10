@@ -19,7 +19,7 @@ const ToggleLanguage = () => {
   return (
     <Wrapper type="button">
       <img
-        className="icon"
+        className="icon inverted-icon"
         src={theme === 'light' ? translateLight : translateDark}
         alt={theme}
         onClick={() => changeLanguage(i18nCheck ? 'ja' : 'en')}
