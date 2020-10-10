@@ -9,7 +9,6 @@ import { Wrapper } from './styles';
 const NavbarLinks = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
-  console.log(t('header:about'))
 
   return (
     <Wrapper desktop={desktop} theme={theme}>

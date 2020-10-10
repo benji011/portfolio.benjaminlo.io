@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { ThemeContext } from 'providers/ThemeProvider';
+import { useTranslation } from 'react-i18next';
 import { Container, Card } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
@@ -8,6 +9,8 @@ import { Wrapper, Grid, Item, Content, Stats } from './styles';
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
+  const { t, i18n } = useTranslation();
+
   const {
     github: {
       viewer: {
@@ -40,7 +43,7 @@ export const Projects = () => {
   );
   return (
     <Wrapper as={Container} id="projects">
-      <h2>Open source</h2>
+      <h2>{t('projects:open source')}</h2>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
