@@ -39,10 +39,11 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      color: #fff;
+      mix-blend-mode: difference;
     }
   }
 
@@ -54,7 +55,8 @@ export const Details = styled.div`
     color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#2d2d2d')};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      color: #fff;
+      mix-blend-mode: difference;
     }
   }
 
