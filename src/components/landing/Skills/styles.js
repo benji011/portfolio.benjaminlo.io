@@ -1,16 +1,12 @@
 import styled from 'styled-components';
-import detailsIllustration from 'assets/illustrations/details.svg';
-import detailsIllustrationLight from 'assets/illustrations/details_light.svg';
 
 export const Wrapper = styled.div`
-  background-image: url(${detailsIllustrationLight});
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
 `;
 
 export const DarkWrapper = styled.div`
-  background-image: url(${detailsIllustration});
   background-size: contain;
   background-position: left top;
   background-repeat: no-repeat;
@@ -70,16 +66,6 @@ export const Details = styled.div`
     @media (max-width: 960px) {
       mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
-  }
-
-  .dark-btn {
-    background-color: #272c3e;
-    color: #fff;
-  }
-
-  .light-btn {
-    background-color: #fff;
-    color: #272c3e;
   }
 `;
 
