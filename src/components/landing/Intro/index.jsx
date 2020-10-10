@@ -45,14 +45,14 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>{t('hi')}</h1>
-          <h4>{t('introduction')}</h4>
+          <h1>{t('intro:hi')}</h1>
+          <h4>{t('intro:introduction')}</h4>
           <Button css={button} as={AnchorLink} href="#contact">
-            {t('contact me')}
+            {t('intro:contact me')}
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt={t('introduction')} />
+          <img src={dev} alt={t('intro:introduction')} />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

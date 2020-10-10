@@ -1,0 +1,14 @@
+{
+  "en": {
+    "about": "About",
+    "projects": "Projects",
+    "resume": "Resume",
+    "contact": "Contact"
+  },
+  "ja": {
+    "about": "自己紹介",
+    "projects": "プロジェクト",
+    "resume": "職務経歴",
+    "contact": "お問い合わせ"
+  }
+}
