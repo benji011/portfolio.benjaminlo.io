@@ -5,7 +5,6 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import resume_light from 'assets/illustrations/resume_light.svg';
-import resume_dark from 'assets/illustrations/resume_dark.svg';
 import { Wrapper, ResumeWrapper, Details, Thumbnail } from './styles';
 
 export const Resume = () => {
@@ -89,7 +88,7 @@ export const Resume = () => {
           </Tabs>
         </Details>
         <Thumbnail>
-          <img src={(theme === 'light' ? resume_light : resume_dark)} alt="I’m Ben and I’m a Backend & Devops engineer!" />
+          <img src={resume_light} alt="I’m Ben and I’m a Backend & Devops engineer!" />
         </Thumbnail>
       </ResumeWrapper>
     </Wrapper>
