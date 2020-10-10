@@ -1,10 +1,7 @@
-import footerIllustration from 'assets/illustrations/footer.svg';
-import footerIllustrationLight from 'assets/illustrations/footer_light.svg';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
-  background-image: url(${footerIllustrationLight});
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -16,7 +13,6 @@ export const Wrapper = styled.div`
 
 export const DarkWrapper = styled.div`
   padding: 28rem 0 4rem 0;
-  background-image: url(${footerIllustration});
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
