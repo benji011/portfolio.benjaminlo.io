@@ -20,7 +20,7 @@ export const Contributions = () => {
     {
       __typename
       github {
-        search(query: "author:benji011  is:pr created:>2020-01-01", type: ISSUE, first: 8) {
+        search(query: "author:benji011 is:public is:pr created:>2020-01-01", type: ISSUE, first: 8) {
           edges {
             node {
               ... on GitHub_PullRequest {
