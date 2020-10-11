@@ -4,6 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { useTranslation } from 'react-i18next';
+import { css } from "@emotion/core"
 import { Container, Button } from 'components/common';
 import resume_light from 'assets/illustrations/resume_light.svg';
 import { Wrapper, ResumeWrapper, Details, Thumbnail } from './styles';

@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import { Button, Input } from 'components/common';
 import { Error, Center, InputField } from './styles';
 
-export default () => (
+export default (theme) => (
   <Formik
     initialValues={{
       name: '',
@@ -107,7 +107,7 @@ export default () => (
           </InputField>
         )}
         <Center>
-          <Button secondary type="submit" disabled={isSubmitting}>
+          <Button className={(theme.theme === "light") ? "dark-btn" : "light-btn"} secondary type="submit" disabled={isSubmitting}>
             Submit
           </Button>
         </Center>

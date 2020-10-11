@@ -14,6 +14,11 @@ import overlayIllustrationLight from 'assets/illustrations/overlay_light.svg';
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
+  const overlay = (
+    (theme === "light")
+    ? `background-image: url(${overlayIllustrationLight});`
+    : `background-image: url(${overlayIllustrationDark});`
+  );
   const darkBtn = (
     `background-color: #272c3e;
      color: #fff;
@@ -22,7 +27,7 @@ export const Intro = () => {
       color: #272c3e;
     }
     `
-  )
+  );
   const lightBtn = (
     `background-color: #fff;
     color: #272c3e;
@@ -32,13 +37,8 @@ export const Intro = () => {
       color: #fff;
     }
     `
-  )
-  const button = (theme === "light") ? darkBtn : lightBtn
-  const overlay = (
-    (theme === "light")
-    ? `background-image: url(${overlayIllustrationLight});`
-    : `background-image: url(${overlayIllustrationDark});`
-  )
+  );
+  const button = (theme === "light") ? darkBtn : lightBtn;
 
   return (
     <Wrapper css={overlay}>
