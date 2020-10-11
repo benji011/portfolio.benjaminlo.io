@@ -1,0 +1,62 @@
+{
+  "en": {
+    "resume": "Resume",
+    "experience": "Experience",
+    "education": "Education",
+    "technologies": "Technologies",
+    "companies": [
+      {
+        "title": "beBit Inc - Full Stack Engineer",
+        "duration": "2018/12 - Present",
+        "experience": [
+          "Developed the backend API endpoints & MySQL DB connections using Django & Django Rest Framework.",
+          "Implementing & maintaining features for the frontend using Vue.JS & Node.js",
+          "Built the REST API service for 3 features (segmented-trends, user-trends, repeat-search) that executes the AWS Athena queries & paginates the results which is then parsed in Django for the frontend.",
+          "Upgraded deprecated packages, severity issues & improved development experience for other developers in other teams (e.g. Generating Makefiles, upgrade Django 1.10 to 1.11, Python 2.7 to 3.7, creating new Docker images etc)."
+        ]
+      },
+      {
+        "title": "ikkai Inc - Lead Senior Engineer",
+        "duration": "2017/06 - 2018/11",
+        "experience": [
+          "Created cloud services for the platform using Lambda & Api Gateway in AWS.",
+          "Managed cloud data, including fixing data discrepancies.",
+          "Created Api endpoints & backend features in Django.",
+          "Implementing frontend UI components & web app features using ReactJS, Redux, Webpack & Node.js",
+          "As the lead & engineering supervisor I upskilled interns & other engineers (Japanese & English)."
+        ]
+      }
+    ],
+    "request full resume": "Want to know more? Request my full resume here!"
+  },
+  "ja": {
+    "resume": "職務経歴",
+    "experience": "経験",
+    "education": "学歴",
+    "technologies": "技術",
+    "companies": [
+      {
+        "title": "株式会社ビービット - フルスタックエンジニア",
+        "duration": "2018年12月 - 在職中",
+        "experience": [
+          "DjangoとDjango Rest Frameworkを使用したバックエンドAPIエンドポイントとMySQL DB上を開発。",
+          "Vue.JSとNode.jsを使ったフロントエンドの機能の実装とメンテナンスを実施。",
+          "3つの機能(セグメント利用傾向分析、ユーザー利用傾向分析、リピート検索)のREST APIサービスを構築。",
+          "非推奨パッケージのアップグレード、深刻度の問題、開発チームが作業しやすくするための改善（例：Makefileの作成、Django 1.10から1.11、Python 2.7から3.7をアップ、Dockerイメージの新規作成など）。"
+        ]
+      },
+      {
+        "title": "株式会社ikkai",
+        "duration": "2017年6月 - 2018年11月",
+        "experience": [
+          "AWS上のDynamoDb、LambdaとApi Gatewayの設計。",
+          "クラウドデータ、データ修正と調査。",
+          "DjangoでバックエンドのApiエンドポイントの作成と設計。",
+          "ReactJS + Redux、 WebpackとNode.jsでフロントのUIコンポーネントのウェブアプリを開発。",
+          "開発責任者としてインターン生と他のエンジニアを担当 （日本語と英語）。"
+        ]
+      }
+    ],
+    "request full resume": "もっと知りたい！ 履歴書詳しくもらいたい！"
+  }
+}

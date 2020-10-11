@@ -70,6 +70,10 @@ export const Details = styled.div`
     color: #fff !important;
     text-decoration: none;
   }
+
+  .resume {
+    margin-bottom: 10px;
+  }
 `;
 
 export const Thumbnail = styled.div`

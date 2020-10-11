@@ -3,46 +3,55 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
+import { useTranslation } from 'react-i18next';
 import { Container, Button } from 'components/common';
 import resume_light from 'assets/illustrations/resume_light.svg';
 import { Wrapper, ResumeWrapper, Details, Thumbnail } from './styles';
 
 export const Resume = () => {
   const { theme } = useContext(ThemeContext);
+  const { t, i18n } = useTranslation();
+  const darkBtn = (
+    `background-color: #272c3e;
+     color: #fff;
+    `
+  )
+  const lightBtn = (
+    `background-color: #fff;
+     color: #272c3e;
+    `
+  )
+  const button = (theme === "light") ? darkBtn : lightBtn
+  const companies = t('resume:companies', { returnObjects: true });
 
   return (
     <Wrapper id="resume">
       <ResumeWrapper as={Container}>
         <Details theme={theme}>
-          <h1>Resume</h1>
+          <h1>{t('resume:resume')}</h1>
           <Tabs>
             <TabList className={(theme === "light" ? "light-tab" : "dark-tab")}>
-              <Tab>Experience</Tab>
-              <Tab>Education</Tab>
-              <Tab>Skills & technologies</Tab>
+              <Tab>{t('resume:experience')}</Tab>
+              <Tab>{t('resume:education')}</Tab>
+              <Tab>{t('resume:technologies')}</Tab>
             </TabList>
 
             <TabPanel>
-              <h4>Any content 1</h4>
-              <ul>
-                <li>etc.</li>
-                <li>etc.</li>
-              </ul>
-              <h4>Any content 1</h4>
-              <ul>
-                <li>etc.</li>
-                <li>etc.</li>
-              </ul>
-              <h4>Any content 1</h4>
-              <ul>
-                <li>etc.</li>
-                <li>etc.</li>
-              </ul>
-              <h4>Any content 1</h4>
-              <ul>
-                <li>etc.</li>
-                <li>etc.</li>
-              </ul>
+              {companies.map((company) => (
+                <div className="company">
+                  <h4>{company.title} - {company.duration}</h4>
+                  <ul>
+                    {
+                      company.experience.map((exp) => (
+                        <li>{exp}</li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              ))}
+            <Button css={button} as={AnchorLink} href="#contact">
+              {t('resume:request full resume')}
+            </Button>
             </TabPanel>
             <TabPanel>
               <h4>Any content 1</h4>
