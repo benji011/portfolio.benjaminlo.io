@@ -4,6 +4,7 @@ import intro from './landing/intro.json';
 import header from './header/header.json';
 import projects from './projects/projects.json';
 import resume from './resume/resume.json';
+import skills from './skills/skills.json';
 
 i18n.use(initReactI18next).init({
   // resources,
@@ -32,6 +33,12 @@ const i18nResourceBundlesViews = [
     resume: {
       en: { ...resume.en },
       ja: { ...resume.ja },
+    },
+  },
+  {
+    skills: {
+      en: { ...skills.en },
+      ja: { ...skills.ja },
     },
   },
 ];

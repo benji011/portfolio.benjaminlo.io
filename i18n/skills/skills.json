@@ -1,0 +1,10 @@
+{
+  "en": {
+    "title": "More about me",
+    "about me": "I am an AWS certified full stack software engineer with {{count}}+ years of demonstratable experience & ability in the industry creating web apps, design and deploy them to be highly available, highly scalable (on demand) and effectively reduce cost with maximum efficiency into your business."
+  },
+  "ja": {
+    "title": "自己紹介",
+    "about me": "私は{{count}}年以上の経験と能力を持つAWS認定のフルスタックソフトウェアエンジニアであり、Webアプリを作成する業界で実証可能な経験と能力を持っています。"
+  }
+}

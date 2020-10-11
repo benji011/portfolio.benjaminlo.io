@@ -4,7 +4,8 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import dev_light from 'assets/illustrations/skills_light.svg';
 import dev_dark from 'assets/illustrations/skills_dark.svg';
-import { Wrapper, DarkWrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
+import { useTranslation } from 'react-i18next';
 import { css } from "@emotion/core"
 
 import detailsIllustrationDark from 'assets/illustrations/details.svg';
@@ -12,6 +13,7 @@ import detailsIllustrationLight from 'assets/illustrations/details_light.svg';
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
+  const { t, i18n } = useTranslation();
   const darkBtn = (
     `background-color: #272c3e;
      color: #fff;
@@ -38,6 +40,16 @@ export const Skills = () => {
     : `background-image: url(${detailsIllustrationDark});`
   )
 
+  /**
+   * Get no. of years experience as a developer then load to i18n
+   */
+  function getYearsOfExperience() {
+    const today = new Date();
+    const yearStartedAsDeveloper = 2013;
+    const yearsOfExperience = String(today.getFullYear() - yearStartedAsDeveloper);
+    return yearsOfExperience;
+  }
+
   return (
     <Wrapper id="about" css={overlay}>
       <SkillsWrapper as={Container}>
@@ -45,13 +57,10 @@ export const Skills = () => {
           <img src={dev_light} alt="I’m Ben and I’m a Backend & Devops engineer!" />
         </Thumbnail>
         <Details theme={theme}>
-          <h1>More about me</h1>
-          <p>
-            I am an AWS certified full stack software engineer with 7+ years of demonstratable experience & ability in the industry creating web apps, design and deploy them to be highly available, highly scalable (on demand) and effectively reduce cost with maximum efficiency into your business.
-          </p>
-
+          <h1>{t('skills:title')}</h1>
+          <p>{t('skills:about me', {count: getYearsOfExperience()})}</p>
           <Button css={button} as={AnchorLink} href="#contact">
-            Hire me
+            {t('intro:contact me')}
           </Button>
         </Details>
       </SkillsWrapper>
