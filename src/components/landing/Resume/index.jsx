@@ -24,6 +24,8 @@ export const Resume = () => {
   const button = (theme === "light") ? darkBtn : lightBtn
   const companies = t('resume:companies', {returnObjects: true});
   const schools = t('resume:schools', {returnObjects: true});
+  const technicalSkills = t('resume:technical skills', {returnObjects: true});
+  const certificates = t('resume:certificates', {returnObjects: true});
 
   return (
     <Wrapper id="resume">
@@ -55,53 +57,45 @@ export const Resume = () => {
             </Button>
             </TabPanel>
             <TabPanel>
-              <ul>
-                {schools.map((school) => (
-                  <div className="company">
-                    <h4>{school.name} - {school.duration}</h4>
-                    <ul>
-                      {
-                        school.description.map((descrption) => (
-                          <li>{descrption}</li>
-                        ))
-                      }
-                    </ul>
-                  </div>
-                ))}
-              </ul>
-              <h4>Any content 1</h4>
-              <ul>
-                <li>etc.</li>
-                <li>etc.</li>
-              </ul>
-              <h4>Any content 1</h4>
-              <ul>
-                <li>etc.</li>
-                <li>etc.</li>
-              </ul>
+              {schools.map((school) => (
+                <div className="company">
+                  <h4>{school.name} - {school.duration}</h4>
+                  <ul>
+                    {
+                      school.description.map((descrption) => (
+                        <li>{descrption}</li>
+                      ))
+                    }
+                  </ul>
+                </div>
+              ))}
+              <Button css={button} as={AnchorLink} href="#contact">
+                {t('resume:request full resume')}
+              </Button>
             </TabPanel>
             <TabPanel>
               <table>
-                <tr>
-                  <th>Company</th>
-                  <td>Alfreds Futterkiste</td>
-                </tr>
-                <tr>
-                  <th>Contact</th>
-                  <td>Alfreds Futterkiste</td>
-                </tr>
-                <tr>
-                  <th>Contact</th>
-                  <td>Francisco Chang</td>
-                </tr>
-                <tr>
-                  <th>Contact</th>
-                  <td>Francisco Chang</td>
-                </tr>
-                <tr>
-                  <th>Contact</th>
-                  <td>Francisco Chang</td>
-                </tr>
+                {
+                  technicalSkills.map((skill) => (
+                    <tr>
+                      <th>{skill.key}</th>
+                      <td>{skill.items}</td>
+                    </tr>
+                  ))
+                }
+                {
+                  certificates.map((cert) => (
+                    <tr>
+                      <th>{cert.key}</th>
+                      <td>
+                        <h5 className="cert-header">{cert.name}</h5>
+                        <p className="cert-text">{cert.issuer}</p>
+                        <p className="cert-text">{cert.issuedDate}</p>
+                        <a className="certificates" href={cert.link} target="_blank">{cert.ref}</a>
+                      </td>
+                    </tr>
+                  ))
+                }
               </table>
             </TabPanel>
           </Tabs>

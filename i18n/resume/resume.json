@@ -30,11 +30,42 @@
     "request full resume": "Want to know more? Request my full resume here!",
     "schools": [
       {
+        "name": "NILS Japanese school - 1 year study abroad",
+        "duration": "2013/4 - 2014/3",
+        "description": [
+          "A full one year language course in Fukuoka, Japan."
+        ]
+      },
+      {
         "name": "Oxford Brookes University - BSc Software Engineering & Japanese",
         "duration": "2008 - 2011",
         "description": [
           "A study in computer science and its application in the real world of computer software engineering. Completed 4 years with a BSc degree."
         ]
+      }
+    ],
+    "technical skills": [
+      {
+        "key": "Frontend",
+        "items": "React.JS, Vue.JS, Gatsby, Jest, Enzyme, Cypress"
+      },
+      {
+        "key": "Backend",
+        "items": "Django, Django REST Framework, Laravel, Zend, MySQL, Postgres"
+      },
+      {
+        "key": "DevOps",
+        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud"
+      }
+    ],
+    "certificates": [
+      {
+        "key": "Certificates",
+        "name": "AWS Certified Cloud Practitioner",
+        "ref": "See credentials",
+        "link": "https://www.youracclaim.com/badges/fcf4883c-c6c6-464c-a659-f89b122430ae/linked_in",
+        "issuer": "Amazon Web Services (AWS)",
+        "issuedDate": "Issued Sep 2020 ・ Expires Sep 2023"
       }
     ]
   },
@@ -69,11 +100,42 @@
     "request full resume": "もっと知りたい！ 履歴書詳しくもらいたい！",
     "schools": [
       {
-        "name": "オックスフォードブルックス大学 - BSc ソフトウェア・エンジニアリング + 日本語と文化",
+        "name": "NILS 日本語学校 - 1年間の留学",
+        "duration": "2013年4月 - 2014年3月",
+        "description": [
+          "福岡で1年間の留学。"
+        ]
+      },
+      {
+        "name": "オックスフォードブルックス大学 - BSc ソフトウェア・エンジニアリング + 日本語歴史文化",
         "duration": "2008年 - 2011年",
         "description": [
           "コンピュータ・ソフトウェア・エンジニアリングの実社会への応用を学ぶ。４年間を勉強しBScの学位を取得。"
         ]
+      }
+    ],
+    "technical skills": [
+      {
+        "key": "フロントエンド",
+        "items": "React.JS, Vue.JS, Gatsby, Jest, Enzyme, Cypress"
+      },
+      {
+        "key": "バックエンド",
+        "items": "Django, Django REST Framework, Laravel, Zend, MySQL, Postgres"
+      },
+      {
+        "key": "インフラ",
+        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud"
+      }
+    ],
+    "certificates": [
+      {
+        "key": "資格",
+        "name": "AWS Certified Cloud Practitioner",
+        "ref": "認証情報を表示",
+        "link": "https://www.youracclaim.com/badges/fcf4883c-c6c6-464c-a659-f89b122430ae/linked_in",
+        "issuer": "Amazon Web Services (AWS)",
+        "issuedDate": "発行日: 2020年9月 ・ 有効期限: 2023年9月"
       }
     ]
   }

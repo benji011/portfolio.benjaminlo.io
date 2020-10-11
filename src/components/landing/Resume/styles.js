@@ -78,6 +78,28 @@ export const Details = styled.div`
   .company {
     margin-bottom: 30px;
   }
+
+  .cert-header {
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .cert-text {
+    font-size: 1rem;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .certificates {
+    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#2d2d2d')};
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .certificates:hover {
+    mix-blend-mode: difference;
+  }
 `;
 
 export const Thumbnail = styled.div`
