@@ -22,7 +22,8 @@ export const Resume = () => {
     `
   )
   const button = (theme === "light") ? darkBtn : lightBtn
-  const companies = t('resume:companies', { returnObjects: true });
+  const companies = t('resume:companies', {returnObjects: true});
+  const schools = t('resume:schools', {returnObjects: true});
 
   return (
     <Wrapper id="resume">
@@ -54,10 +55,19 @@ export const Resume = () => {
             </Button>
             </TabPanel>
             <TabPanel>
-              <h4>Any content 1</h4>
               <ul>
-                <li>etc.</li>
-                <li>etc.</li>
+                {schools.map((school) => (
+                  <div className="company">
+                    <h4>{school.name} - {school.duration}</h4>
+                    <ul>
+                      {
+                        school.description.map((descrption) => (
+                          <li>{descrption}</li>
+                        ))
+                      }
+                    </ul>
+                  </div>
+                ))}
               </ul>
               <h4>Any content 1</h4>
               <ul>

@@ -74,6 +74,10 @@ export const Details = styled.div`
   .resume {
     margin-bottom: 10px;
   }
+
+  .company {
+    margin-bottom: 30px;
+  }
 `;
 
 export const Thumbnail = styled.div`

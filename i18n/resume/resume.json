@@ -3,7 +3,7 @@
     "resume": "Resume",
     "experience": "Experience",
     "education": "Education",
-    "technologies": "Technologies",
+    "technologies": "Technologies & certs",
     "companies": [
       {
         "title": "beBit Inc - Full Stack Engineer",
@@ -27,13 +27,22 @@
         ]
       }
     ],
-    "request full resume": "Want to know more? Request my full resume here!"
+    "request full resume": "Want to know more? Request my full resume here!",
+    "schools": [
+      {
+        "name": "Oxford Brookes University - BSc Software Engineering & Japanese",
+        "duration": "2008 - 2011",
+        "description": [
+          "A study in computer science and its application in the real world of computer software engineering. Completed 4 years with a BSc degree."
+        ]
+      }
+    ]
   },
   "ja": {
     "resume": "職務経歴",
     "experience": "経験",
     "education": "学歴",
-    "technologies": "技術",
+    "technologies": "技術・スキル・認定",
     "companies": [
       {
         "title": "株式会社ビービット - フルスタックエンジニア",
@@ -57,6 +66,15 @@
         ]
       }
     ],
-    "request full resume": "もっと知りたい！ 履歴書詳しくもらいたい！"
+    "request full resume": "もっと知りたい！ 履歴書詳しくもらいたい！",
+    "schools": [
+      {
+        "name": "オックスフォードブルックス大学 - BSc ソフトウェア・エンジニアリング + 日本語と文化",
+        "duration": "2008年 - 2011年",
+        "description": [
+          "コンピュータ・ソフトウェア・エンジニアリングの実社会への応用を学ぶ。４年間を勉強しBScの学位を取得。"
+        ]
+      }
+    ]
   }
 }
