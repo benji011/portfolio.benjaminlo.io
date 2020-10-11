@@ -42,12 +42,12 @@ export const Resume = () => {
 
             <TabPanel>
               {companies.map((company) => (
-                <div className="company">
+                <div key={company.title.toString()} className="company">
                   <h4>{company.title} - {company.duration}</h4>
                   <ul>
                     {
                       company.experience.map((exp) => (
-                        <li>{exp}</li>
+                        <li key={exp.toString()}>{exp}</li>
                       ))
                     }
                   </ul>
@@ -59,12 +59,12 @@ export const Resume = () => {
             </TabPanel>
             <TabPanel>
               {schools.map((school) => (
-                <div className="company">
+                <div key={school.toString()} className="company">
                   <h4>{school.name} - {school.duration}</h4>
                   <ul>
                     {
-                      school.description.map((descrption) => (
-                        <li>{descrption}</li>
+                      school.description.map((description) => (
+                        <li key={description.toString()}>{description}</li>
                       ))
                     }
                   </ul>
@@ -78,7 +78,7 @@ export const Resume = () => {
               <table>
                 {
                   technicalSkills.map((skill) => (
-                    <tr>
+                    <tr key={skill.key.toString()}>
                       <th>{skill.key}</th>
                       <td>{skill.items}</td>
                     </tr>
@@ -86,7 +86,7 @@ export const Resume = () => {
                 }
                 {
                   certificates.map((cert) => (
-                    <tr>
+                    <tr key={cert.name.toString()}>
                       <th>{cert.key}</th>
                       <td>
                         <h5 className="cert-header">{cert.name}</h5>

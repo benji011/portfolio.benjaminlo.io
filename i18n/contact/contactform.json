@@ -1,0 +1,12 @@
+{
+  "en": {
+    "fullname": "Full name",
+    "email": "E-mail address",
+    "message": "Message"
+  },
+  "ja": {
+    "fullname": "お名前",
+    "email": "メールアドレス",
+    "message": "メッセージ"
+  }
+}
