@@ -5,7 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { Container, Card } from 'components/common';
 import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
+import PullRequest from 'components/common/Icons/PullRequest';
 import { Wrapper, Grid, Item, Content, Stats } from './styles';
+import { Contributions } from './Contributions/index'
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
@@ -41,8 +43,14 @@ export const Projects = () => {
       }
     `
   );
+
+  const today = new Date();
+  const thisYear = today.getFullYear()
+
   return (
     <Wrapper as={Container} id="projects">
+      <h2>{t('projects:recent contributions', {year: thisYear})}</h2>
+      <Contributions />
       <h2>{t('projects:open source')}</h2>
       <Grid>
         {edges.map(({ node }) => (

@@ -2,6 +2,30 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
+
+  .contributions-section {
+    margin-bottom: 40px;
+  }
+
+  .pr-title-light {
+    color: #2d2d2d;
+    text-decoration: none;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
+
+  .pr-title-dark {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
 `;
 
 export const Grid = styled.div`
