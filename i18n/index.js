@@ -68,7 +68,7 @@ const i18nResourceBundlesComponents = [
 ];
 
 // Load i18n resource bundles from each resource object
-const getI18nResourceBundles = resource => {
+const getI18nResourceBundles = (resource) => {
   const key = Object.keys(resource)[0];
   const enBundle = resource[key].en;
   const jaBundle = resource[key].ja;
@@ -79,12 +79,12 @@ const getI18nResourceBundles = resource => {
 };
 
 // i18n resource bundles for views
-i18nResourceBundlesViews.forEach(resource => {
+i18nResourceBundlesViews.forEach((resource) => {
   getI18nResourceBundles(resource);
 });
 
 // i18n resource bundles for components
-i18nResourceBundlesComponents.forEach(resource => {
+i18nResourceBundlesComponents.forEach((resource) => {
   getI18nResourceBundles(resource);
 });
 
