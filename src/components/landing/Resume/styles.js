@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   background-size: contain;
@@ -29,10 +29,11 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
-    color: ${({ theme }) => (theme === 'dark' ? '#fff' : '#212121')};
+    color: ${({ theme }) => (theme === "dark" ? "#fff" : "#212121")};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
     }
   }
 
@@ -41,10 +42,11 @@ export const Details = styled.div`
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
-    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#2d2d2d')};
+    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#2d2d2d")};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
     }
   }
 
@@ -53,10 +55,11 @@ export const Details = styled.div`
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
-    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#2d2d2d')};
+    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#2d2d2d")};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
+      mix-blend-mode: ${({ theme }) =>
+        theme === "light" ? "unset" : "difference"};
     }
   }
 
@@ -92,7 +95,7 @@ export const Details = styled.div`
   }
 
   .certificates {
-    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#2d2d2d')};
+    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#2d2d2d")};
     text-decoration: none;
     font-weight: 600;
   }

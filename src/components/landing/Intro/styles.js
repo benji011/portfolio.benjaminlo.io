@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding-bottom: 4rem;
@@ -29,7 +29,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 36pt;
-    color: ${({ theme }) => (theme === 'light' ? '#2d2d2d' : '#fff')};
+    color: ${({ theme }) => (theme === "light" ? "#2d2d2d" : "#fff")};
 
     @media (max-width: 960px) {
       color: #fff;
@@ -45,7 +45,7 @@ export const Details = styled.div`
     margin-bottom: 2.5rem;
     font-size: 32pt;
     font-weight: normal;
-    color: ${({ theme }) => (theme === 'light' ? '#2d2d2d' : '#e6e6e6')};
+    color: ${({ theme }) => (theme === "light" ? "#2d2d2d" : "#e6e6e6")};
 
     @media (max-width: 960px) {
       color: #fff;

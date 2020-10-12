@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
@@ -55,9 +55,9 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
+    color: ${({ theme }) => (theme === "light" ? "#fff" : "#212121")};
   }
-  color: ${({ theme }) => (theme === 'light' ? '#fff' : '#272C3E')};
+  color: ${({ theme }) => (theme === "light" ? "#fff" : "#272C3E")};
 
   a {
     font-weight: 600;
