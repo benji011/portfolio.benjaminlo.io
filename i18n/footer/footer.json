@@ -1,0 +1,12 @@
+{
+  "en": {
+    "forked from": "Forked from",
+    "open sourced": "open sourced on",
+    "deployed": "and deployed on"
+  },
+  "ja": {
+    "forked from": "からForkし",
+    "open sourced": "でオープンソース化して",
+    "deployed": "にデプロイした"
+  }
+}

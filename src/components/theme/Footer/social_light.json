@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Github",
+    "link": "https://github.com/benji011",
+    "icon": "/icons/github_light.svg"
+  },
+  {
+    "id": 2,
+    "name": "StackOverflow",
+    "link": "https://stackoverflow.com/users/4477547/benji/",
+    "icon": "/icons/stackoverflow_light.svg"
+  },
+  {
+    "id": 3,
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/benjamin-lo-6b0ba11a/",
+    "icon": "/icons/linkedin_light.svg"
+  },
+  {
+    "id": 4,
+    "name": "Medium",
+    "link": "https://www.medium.com/@stupid_dev/",
+    "icon": "/icons/medium_light.svg"
+  },
+  {
+    "id": 5,
+    "name": "Instagram",
+    "link": "https://www.instagram.com/benjaminlo_dev",
+    "icon": "/icons/instagram_light.svg"
+  }
+]

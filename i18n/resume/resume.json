@@ -1,0 +1,142 @@
+{
+  "en": {
+    "resume": "Resume",
+    "experience": "Experience",
+    "education": "Education",
+    "technologies": "Technologies & certs",
+    "companies": [
+      {
+        "title": "beBit Inc - Full Stack Engineer",
+        "duration": "2018/12 - Present",
+        "experience": [
+          "Developed the backend API endpoints & MySQL DB connections using Django & Django Rest Framework.",
+          "Implementing & maintaining features for the frontend using Vue.JS & Node.js",
+          "Built the REST API service for 3 features (segmented-trends, user-trends, repeat-search) that executes the AWS Athena queries & paginates the results which is then parsed in Django for the frontend.",
+          "Upgraded deprecated packages, severity issues & improved development experience for other developers in other teams (e.g. Generating Makefiles, upgrade Django 1.10 to 1.11, Python 2.7 to 3.7, creating new Docker images etc)."
+        ]
+      },
+      {
+        "title": "ikkai Inc - Lead Senior Engineer",
+        "duration": "2017/06 - 2018/11",
+        "experience": [
+          "Created cloud services for the platform using Lambda & Api Gateway in AWS.",
+          "Managed cloud data, including fixing data discrepancies.",
+          "Created Api endpoints & backend features in Django.",
+          "Implementing frontend UI components & web app features using ReactJS, Redux, Webpack & Node.js",
+          "As the lead & engineering supervisor I upskilled interns & other engineers (Japanese & English)."
+        ]
+      }
+    ],
+    "request full resume": "Request my full resume!",
+    "schools": [
+      {
+        "name": "NILS Japanese school - 1 year study abroad",
+        "duration": "2013/4 - 2014/3",
+        "description": [
+          "A full one year language course in Fukuoka, Japan."
+        ]
+      },
+      {
+        "name": "Oxford Brookes University - BSc Software Engineering & Japanese",
+        "duration": "2008 - 2011",
+        "description": [
+          "A study in computer science and its application in the real world of computer software engineering. Completed 4 years with a BSc degree."
+        ]
+      }
+    ],
+    "technical skills": [
+      {
+        "key": "Frontend",
+        "items": "React.JS, Vue.JS, Gatsby, Jest, Enzyme, Cypress"
+      },
+      {
+        "key": "Backend",
+        "items": "Django, Django REST Framework, Laravel, Zend, MySQL, Postgres"
+      },
+      {
+        "key": "DevOps",
+        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud"
+      }
+    ],
+    "certificates": [
+      {
+        "key": "Certificates",
+        "name": "AWS Certified Cloud Practitioner",
+        "ref": "See credentials",
+        "link": "https://www.youracclaim.com/badges/fcf4883c-c6c6-464c-a659-f89b122430ae/linked_in",
+        "issuer": "Amazon Web Services (AWS)",
+        "issuedDate": "Issued Sep 2020 ・ Expires Sep 2023"
+      }
+    ]
+  },
+  "ja": {
+    "resume": "職務経歴",
+    "experience": "経験",
+    "education": "学歴",
+    "technologies": "技術・スキル・認定",
+    "companies": [
+      {
+        "title": "株式会社ビービット - フルスタックエンジニア",
+        "duration": "2018年12月 - 在職中",
+        "experience": [
+          "DjangoとDjango Rest Frameworkを使用したバックエンドAPIエンドポイントとMySQL DB上を開発。",
+          "Vue.JSとNode.jsを使ったフロントエンドの機能の実装とメンテナンスを実施。",
+          "3つの機能(セグメント利用傾向分析、ユーザー利用傾向分析、リピート検索)のREST APIサービスを構築。",
+          "非推奨パッケージのアップグレード、深刻度の問題、開発チームが作業しやすくするための改善（例：Makefileの作成、Django 1.10から1.11、Python 2.7から3.7をアップ、Dockerイメージの新規作成など）。"
+        ]
+      },
+      {
+        "title": "株式会社ikkai",
+        "duration": "2017年6月 - 2018年11月",
+        "experience": [
+          "AWS上のDynamoDb、LambdaとApi Gatewayの設計。",
+          "クラウドデータ、データ修正と調査。",
+          "DjangoでバックエンドのApiエンドポイントの作成と設計。",
+          "ReactJS + Redux、 WebpackとNode.jsでフロントのUIコンポーネントのウェブアプリを開発。",
+          "開発責任者としてインターン生と他のエンジニアを担当 （日本語と英語）。"
+        ]
+      }
+    ],
+    "request full resume": "履歴書を要求",
+    "schools": [
+      {
+        "name": "NILS 日本語学校 - 1年間の留学",
+        "duration": "2013年4月 - 2014年3月",
+        "description": [
+          "福岡で1年間の留学。"
+        ]
+      },
+      {
+        "name": "オックスフォードブルックス大学 - BSc ソフトウェア・エンジニアリング + 日本語歴史文化",
+        "duration": "2008年 - 2011年",
+        "description": [
+          "コンピュータ・ソフトウェア・エンジニアリングの実社会への応用を学ぶ。４年間を勉強しBScの学位を取得。"
+        ]
+      }
+    ],
+    "technical skills": [
+      {
+        "key": "フロントエンド",
+        "items": "React.JS, Vue.JS, Gatsby, Jest, Enzyme, Cypress"
+      },
+      {
+        "key": "バックエンド",
+        "items": "Django, Django REST Framework, Laravel, Zend, MySQL, Postgres"
+      },
+      {
+        "key": "インフラ",
+        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud"
+      }
+    ],
+    "certificates": [
+      {
+        "key": "資格",
+        "name": "AWS Certified Cloud Practitioner",
+        "ref": "認証情報を表示",
+        "link": "https://www.youracclaim.com/badges/fcf4883c-c6c6-464c-a659-f89b122430ae/linked_in",
+        "issuer": "Amazon Web Services (AWS)",
+        "issuedDate": "発行日: 2020年9月 ・ 有効期限: 2023年9月"
+      }
+    ]
+  }
+}

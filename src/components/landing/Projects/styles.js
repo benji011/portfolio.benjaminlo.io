@@ -1,7 +1,53 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
+
+  .contributions-section {
+    margin-bottom: 40px;
+  }
+
+  .pr-title-light {
+    color: #2d2d2d;
+    text-decoration: none;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
+
+  .pr-title-dark {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
+
+  .pr-title-light-title {
+    color: #2d2d2d;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
+
+  .pr-title-dark-title {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
 `;
 
 export const Grid = styled.div`
@@ -27,11 +73,11 @@ export const Item = styled.div`
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   h4 {
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
   }
 
   p {
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+    color: ${({ theme }) => (theme === "light" ? "#2d2d2d" : "#c7c7c7")};
   }
 `;
 
@@ -54,11 +100,11 @@ export const Stats = styled.div`
     }
 
     svg path {
-      fill: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+      fill: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
     }
 
     span {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+      color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
       margin-left: 0.5rem;
     }
   }

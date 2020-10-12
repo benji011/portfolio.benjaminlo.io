@@ -1,9 +1,7 @@
-import footerIllustration from 'assets/illustrations/footer.svg';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
-  background-image: url(${footerIllustration});
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -25,6 +23,16 @@ export const Flex = styled.div`
   }
 `;
 
+export const Item = styled.img`
+  margin: 0 0.2rem;
+  ${({ img }) =>
+    img &&
+    `
+    position: relative;
+    top: .15rem;
+  `};
+`;
+
 export const Links = styled.div`
   display: flex;
   align-items: center;
@@ -38,7 +46,7 @@ export const Links = styled.div`
 
     &:first-child,
     &:last-child {
-      margin: 0;
+      margin: 10;
     }
   }
 `;
@@ -47,7 +55,22 @@ export const Details = styled.div`
   h2,
   a,
   span {
-    color: #212121;
+    color: ${({ theme }) => (theme === "light" ? "#fff" : "#212121")};
+  }
+  color: ${({ theme }) => (theme === "light" ? "#fff" : "#272C3E")};
+
+  a {
+    font-weight: 600;
+  }
+
+  a:hover {
+    font-weight: 600;
+    mix-blend-mode: difference;
+  }
+
+  img {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   @media (max-width: 680px) {

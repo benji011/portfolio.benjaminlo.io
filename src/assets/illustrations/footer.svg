@@ -2,7 +2,7 @@
   <defs>
     <style>
       .cls-1, .cls-2, .cls-3 {
-        fill: #efeeff;
+        fill: #fff;
       }
 
       .cls-1 {
