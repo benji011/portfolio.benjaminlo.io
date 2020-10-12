@@ -2,6 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import intro from './landing/intro.json';
 import header from './header/header.json';
+import footer from './footer/footer.json';
 import projects from './projects/projects.json';
 import resume from './resume/resume.json';
 import skills from './skills/skills.json';
@@ -56,6 +57,12 @@ const i18nResourceBundlesComponents = [
     header: {
       en: { ...header.en },
       ja: { ...header.ja },
+    },
+  },
+  {
+    footer: {
+      en: { ...footer.en },
+      ja: { ...footer.ja },
     },
   },
 ];

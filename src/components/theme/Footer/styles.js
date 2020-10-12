@@ -57,7 +57,16 @@ export const Details = styled.div`
   span {
     color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
   }
-  color: ${({ theme }) => (theme === 'light' ? '#fff' : '#212121')};
+  color: ${({ theme }) => (theme === 'light' ? '#fff' : '#272C3E')};
+
+  a {
+    font-weight: 600;
+  }
+
+  a:hover {
+    font-weight: 600;
+    mix-blend-mode: difference;
+  }
 
   img {
     margin-left: 5px;
