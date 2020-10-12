@@ -33,6 +33,9 @@ export const Contributions = () => {
                 merged
                 title
                 url
+                repository {
+                  name
+                }
               }
             }
           }
@@ -45,7 +48,9 @@ export const Contributions = () => {
     <ul className="contributions-section">
     {edges.map(({ node }) => (
       <li key={node.id}>
-        <a className={(theme === "light" ? "pr-title-light" : "pr-title-dark")} href={node.url} target="_blank">{node.title}</a>
+        <a className={(theme === "light" ? "pr-title-light" : "pr-title-dark")} href={node.url} target="_blank">
+          [{node.repository.name}] - {node.title}
+        </a>
       </li>
     ))}
     </ul>
