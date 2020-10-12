@@ -44,12 +44,9 @@ export const Projects = () => {
     `
   );
 
-  const today = new Date();
-  const thisYear = today.getFullYear()
-
   return (
     <Wrapper as={Container} id="projects">
-      <h2>{t('projects:recent contributions', {year: thisYear})}</h2>
+      <h2>{t('projects:recent contributions')}</h2>
       <Contributions />
       <h2>{t('projects:open source')}</h2>
       <Grid>

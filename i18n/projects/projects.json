@@ -1,10 +1,10 @@
 {
   "en": {
     "open source": "Open source projects",
-    "recent contributions": "My contributions this year - {{year}}"
+    "recent contributions": "Open source contributions"
   },
   "ja": {
     "open source": "オープンソースプロジェクト",
-    "recent contributions": "{{year}}年に貢献したレポジトリー"
+    "recent contributions": "オープンソースへの貢献"
   }
 }

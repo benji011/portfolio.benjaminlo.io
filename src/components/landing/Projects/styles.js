@@ -26,6 +26,28 @@ export const Wrapper = styled.div`
       font-weight: 600;
     }
   }
+
+  .pr-title-light-title {
+    color: #2d2d2d;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
+
+  .pr-title-dark-title {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      mix-blend-mode: difference;
+      font-weight: 600;
+    }
+  }
 `;
 
 export const Grid = styled.div`

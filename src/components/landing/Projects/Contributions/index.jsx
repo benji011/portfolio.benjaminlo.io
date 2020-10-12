@@ -35,6 +35,7 @@ export const Contributions = () => {
                 url
                 repository {
                   name
+                  url
                 }
               }
             }
@@ -48,8 +49,11 @@ export const Contributions = () => {
     <ul className="contributions-section">
     {edges.map(({ node }) => (
       <li key={node.id}>
+        <a className={(theme === "light" ? "pr-title-light-title" : "pr-title-dark-title")} href={node.repository.url} target="_blank">
+          [{node.repository.name}]{' - '}
+        </a>
         <a className={(theme === "light" ? "pr-title-light" : "pr-title-dark")} href={node.url} target="_blank">
-          [{node.repository.name}] - {node.title}
+         {node.title}
         </a>
       </li>
     ))}
