@@ -8,7 +8,7 @@ import { Container, Button } from "components/common";
 import resume_light from "assets/illustrations/resume_light.svg";
 import { Wrapper, ResumeWrapper, Details, Thumbnail } from "./styles";
 
-import resume from "~/data/landing/resume.json"
+import resume from "~/data/landing/resume.json";
 
 export const Resume = () => {
   const { theme } = useContext(ThemeContext);
@@ -28,7 +28,7 @@ export const Resume = () => {
     <Wrapper id="resume">
       <ResumeWrapper as={Container}>
         <Details theme={theme}>
-          <h1>resume:resume</h1>
+          <h1>{resume.resume}</h1>
           <Tabs>
             <TabList className={theme === "light" ? "light-tab" : "dark-tab"}>
               <Tab>{resume.experience}</Tab>

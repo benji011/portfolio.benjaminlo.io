@@ -7,7 +7,7 @@ import Fork from "components/common/Icons/Fork";
 import { Wrapper, Grid, Item, Content, Stats } from "./styles";
 import { Contributions } from "./Contributions/index";
 
-import projects from "~/data/landing/projects.json"
+import projects from "~/data/landing/projects.json";
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);

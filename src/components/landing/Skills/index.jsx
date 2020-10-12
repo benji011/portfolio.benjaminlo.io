@@ -7,6 +7,8 @@ import dev_dark from "assets/illustrations/skills_dark.svg";
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from "./styles";
 import { css } from "@emotion/core";
 
+import skills from "~/data/landing/skills.json";
+
 import detailsIllustrationDark from "assets/illustrations/details.svg";
 import detailsIllustrationLight from "assets/illustrations/details_light.svg";
 
@@ -55,10 +57,10 @@ export const Skills = () => {
           />
         </Thumbnail>
         <Details theme={theme}>
-          <h1>skills:title</h1>
-          <p>skills:about me</p>
+          <h1>{skills.title}</h1>
+          <p>{skills.about}</p>
           <Button css={button} as={AnchorLink} href="#contact">
-            intro:contact me
+            {skills.contact}
           </Button>
         </Details>
       </SkillsWrapper>

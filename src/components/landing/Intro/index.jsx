@@ -10,7 +10,7 @@ import { css } from "@emotion/core";
 import overlayIllustrationDark from "assets/illustrations/overlay.svg";
 import overlayIllustrationLight from "assets/illustrations/overlay_light.svg";
 
-import intro from "~/data/landing/intro.json"
+import intro from "~/data/landing/intro.json";
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);

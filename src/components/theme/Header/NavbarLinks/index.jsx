@@ -4,7 +4,7 @@ import { ThemeContext } from "providers/ThemeProvider";
 import ToggleTheme from "components/theme/Header/ToggleTheme";
 import { Wrapper } from "./styles";
 
-import header from "~/data/theme/header.json"
+import header from "~/data/theme/header.json";
 
 const NavbarLinks = ({ desktop }) => {
   const { theme } = useContext(ThemeContext);
