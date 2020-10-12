@@ -8,6 +8,8 @@ import { Container, Button } from "components/common";
 import resume_light from "assets/illustrations/resume_light.svg";
 import { Wrapper, ResumeWrapper, Details, Thumbnail } from "./styles";
 
+import resume from "~/data/landing/resume.json"
+
 export const Resume = () => {
   const { theme } = useContext(ThemeContext);
   const darkBtn = `background-color: #272c3e;
@@ -17,10 +19,10 @@ export const Resume = () => {
      color: #272c3e;
     `;
   const button = theme === "light" ? darkBtn : lightBtn;
-  // const companies = t("resume:companies", { returnObjects: true });
-  // const schools = t("resume:schools", { returnObjects: true });
-  // const technicalSkills = t("resume:technical skills", { returnObjects: true });
-  // const certificates = t("resume:certificates", { returnObjects: true });
+  const companies = resume.companies;
+  const schools = resume.schools;
+  const technicalSkills = resume.technicalskills;
+  const certificates = resume.certificates;
 
   return (
     <Wrapper id="resume">
@@ -29,13 +31,71 @@ export const Resume = () => {
           <h1>resume:resume</h1>
           <Tabs>
             <TabList className={theme === "light" ? "light-tab" : "dark-tab"}>
-              <Tab>resume:experience</Tab>
-              <Tab>resume:education</Tab>
-              <Tab>resume:technologies</Tab>
+              <Tab>{resume.experience}</Tab>
+              <Tab>{resume.education}</Tab>
+              <Tab>{resume.technologies}</Tab>
             </TabList>
 
             <TabPanel>
-              test
+              {companies.map((company) => (
+                <div key={company.title.toString()} className="company">
+                  <h4>
+                    {company.title} - {company.duration}
+                  </h4>
+                  <ul>
+                    {company.experience.map((exp) => (
+                      <li key={exp.toString()}>{exp}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              <Button css={button} as={AnchorLink} href="#contact">
+                {resume.requestFullResume}
+              </Button>
+            </TabPanel>
+            <TabPanel>
+              {schools.map((school) => (
+                <div key={school.toString()} className="company">
+                  <h4>
+                    {school.name} - {school.duration}
+                  </h4>
+                  <ul>
+                    {school.description.map((description) => (
+                      <li key={description.toString()}>{description}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              <Button css={button} as={AnchorLink} href="#contact">
+                {resume.requestFullResume}
+              </Button>
+            </TabPanel>
+            <TabPanel>
+              <table>
+                {technicalSkills.map((skill) => (
+                  <tr key={skill.key.toString()}>
+                    <th>{skill.key}</th>
+                    <td>{skill.items}</td>
+                  </tr>
+                ))}
+                {certificates.map((cert) => (
+                  <tr key={cert.name.toString()}>
+                    <th>{cert.key}</th>
+                    <td>
+                      <h5 className="cert-header">{cert.name}</h5>
+                      <p className="cert-text">{cert.issuer}</p>
+                      <p className="cert-text">{cert.issuedDate}</p>
+                      <a
+                        className="certificates"
+                        href={cert.link}
+                        target="_blank"
+                      >
+                        {cert.ref}
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </table>
             </TabPanel>
           </Tabs>
         </Details>

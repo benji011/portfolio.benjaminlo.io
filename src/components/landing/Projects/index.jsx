@@ -7,6 +7,8 @@ import Fork from "components/common/Icons/Fork";
 import { Wrapper, Grid, Item, Content, Stats } from "./styles";
 import { Contributions } from "./Contributions/index";
 
+import projects from "~/data/landing/projects.json"
+
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
 
@@ -46,9 +48,9 @@ export const Projects = () => {
 
   return (
     <Wrapper as={Container} id="projects">
-      <h2>"projects:recent contributions"</h2>
+      <h2>{projects.contributions}</h2>
       <Contributions />
-      <h2>"projects:open source"</h2>
+      <h2>{projects.opensource}</h2>
       <Grid>
         {edges.map(({ node }) => (
           <Item

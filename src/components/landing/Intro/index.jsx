@@ -10,6 +10,8 @@ import { css } from "@emotion/core";
 import overlayIllustrationDark from "assets/illustrations/overlay.svg";
 import overlayIllustrationLight from "assets/illustrations/overlay_light.svg";
 
+import intro from "~/data/landing/intro.json"
+
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
   const overlay =
@@ -38,10 +40,10 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>intro:hi</h1>
-          <h4>intro:introduction</h4>
+          <h1>{intro.hi}</h1>
+          <h4>{intro.introduction}</h4>
           <Button css={button} as={AnchorLink} href="#contact">
-            intro:contact me
+            {intro.contact}
           </Button>
         </Details>
         <Thumbnail>
