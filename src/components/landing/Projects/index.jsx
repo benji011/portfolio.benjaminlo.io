@@ -1,17 +1,14 @@
 import React, { useContext } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { ThemeContext } from "providers/ThemeProvider";
-import { useTranslation } from "react-i18next";
 import { Container, Card } from "components/common";
 import Star from "components/common/Icons/Star";
 import Fork from "components/common/Icons/Fork";
-import PullRequest from "components/common/Icons/PullRequest";
 import { Wrapper, Grid, Item, Content, Stats } from "./styles";
 import { Contributions } from "./Contributions/index";
 
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
-  const { t, i18n } = useTranslation();
 
   const {
     github: {
@@ -49,9 +46,9 @@ export const Projects = () => {
 
   return (
     <Wrapper as={Container} id="projects">
-      <h2>{t("projects:recent contributions")}</h2>
+      <h2>"projects:recent contributions"</h2>
       <Contributions />
-      <h2>{t("projects:open source")}</h2>
+      <h2>"projects:open source"</h2>
       <Grid>
         {edges.map(({ node }) => (
           <Item

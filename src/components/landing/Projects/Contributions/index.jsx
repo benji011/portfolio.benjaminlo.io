@@ -1,16 +1,13 @@
 import React, { useContext } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { ThemeContext } from "providers/ThemeProvider";
-import { useTranslation } from "react-i18next";
 import { Container, Card } from "components/common";
 import Star from "components/common/Icons/Star";
 import Fork from "components/common/Icons/Fork";
-import PullRequest from "components/common/Icons/PullRequest";
 import { Wrapper, Grid, Item, Content, Stats } from "../styles";
 
 export const Contributions = () => {
   const { theme } = useContext(ThemeContext);
-  const { t, i18n } = useTranslation();
 
   const {
     github: {

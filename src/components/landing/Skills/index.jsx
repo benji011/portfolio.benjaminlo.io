@@ -5,7 +5,6 @@ import { Container, Button } from "components/common";
 import dev_light from "assets/illustrations/skills_light.svg";
 import dev_dark from "assets/illustrations/skills_dark.svg";
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from "./styles";
-import { useTranslation } from "react-i18next";
 import { css } from "@emotion/core";
 
 import detailsIllustrationDark from "assets/illustrations/details.svg";
@@ -13,7 +12,6 @@ import detailsIllustrationLight from "assets/illustrations/details_light.svg";
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
-  const { t, i18n } = useTranslation();
   const darkBtn = `background-color: #272c3e;
      color: #fff;
      @media (max-width: 760px) {
@@ -57,10 +55,10 @@ export const Skills = () => {
           />
         </Thumbnail>
         <Details theme={theme}>
-          <h1>{t("skills:title")}</h1>
-          <p>{t("skills:about me", { count: getYearsOfExperience() })}</p>
+          <h1>skills:title</h1>
+          <p>skills:about me</p>
           <Button css={button} as={AnchorLink} href="#contact">
-            {t("intro:contact me")}
+            intro:contact me
           </Button>
         </Details>
       </SkillsWrapper>
