@@ -8,7 +8,25 @@
   {
     "id": 2,
     "name": "StackOverflow",
-    "link": "https://stackoverflow.com/users/story/7396786",
+    "link": "https://stackoverflow.com/users/4477547/benji/",
     "icon": "/icons/stackoverflow.svg"
+  },
+  {
+    "id": 3,
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/benjamin-lo-6b0ba11a/",
+    "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 4,
+    "name": "Medium",
+    "link": "https://www.medium.com/@stupid_dev/",
+    "icon": "/icons/medium.svg"
+  },
+  {
+    "id": 5,
+    "name": "Instagram",
+    "link": "https://www.instagram.com/benjaminlo_dev",
+    "icon": "/icons/instagram.svg"
   }
 ]
