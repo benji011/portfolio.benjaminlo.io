@@ -20,7 +20,7 @@ Author of template - Ismail Ghallou (@Smakosh)
 
 The MIT License (MIT)
 
-All content in this repository (except for anything under `data` highlighted below) are free of use as this was a project forked originally from [smakosh/gatsby-portfolio-dev](https://github.com/smakosh/gatsby-portfolio-dev).
+All content in this repository (except for anything under `data` or the `i18n` highlighted below) are free of use as this was a project forked originally from [smakosh/gatsby-portfolio-dev](https://github.com/smakosh/gatsby-portfolio-dev).
 
 You may **NOT** use anything under this directory or the contents of these files. You **CAN** however, use the file and folder structure + extension files as reference for your own personal use.
 
@@ -34,4 +34,25 @@ data
 └── theme
     ├── footer.json
     └── header.json
+
+...
+i18n
+├── app.json
+├── contact
+│   └── contactform.json
+├── en.json
+├── footer
+│   └── footer.json
+├── header
+│   └── header.json
+├── index.js
+├── landing
+│   └── intro.json
+├── projects
+│   └── projects.json
+├── resume
+│   └── resume.json
+├── skills
+│   └── skills.json
+└── translation.json
 ```
