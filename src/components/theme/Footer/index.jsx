@@ -21,8 +21,6 @@ import GithubIcon from "~/static/icons/github_light.svg";
 import VercelIconDark from "~/static/icons/vercel.svg";
 import VercelIcon from "~/static/icons/vercel_light.svg";
 
-import footer from "~/data/theme/footer.json";
-
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
 
@@ -44,7 +42,7 @@ export const Footer = () => {
           <a href="https://benjaminlo.io" target="_blank">
             Benjamin Lo
           </a>{" "}
-          {`${new Date().getFullYear()} `}- {footer.forkedFrom}
+          {`${new Date().getFullYear()} `}- Forked from
           <a
             href="https://github.com/smakosh/gatsby-portfolio-dev"
             rel="noopener noreferrer"
@@ -52,7 +50,7 @@ export const Footer = () => {
           >
             <Item width="24" src={Smakosh} img alt="Smakosh" />
           </a>
-          {footer.opensourced}
+          Smakoshopen sourced on
           <a
             href="https://github.com/benji011/portfolio_gatsby"
             rel="noopener noreferrer"
@@ -60,7 +58,7 @@ export const Footer = () => {
           >
             <Item width="24" src={Github} img alt="GitHub" />
           </a>
-          {footer.deployed}
+          and deployed on
           <a
             href="https://vercel.com"
             rel="noopener noreferrer"
