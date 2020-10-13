@@ -12,13 +12,15 @@ const ToggleLanguage = () => {
   // Change language function
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    console.log('CLICK', lng);
   };
 
   let i18nCheck = 'en';
 
   if (i18n.hasOwnProperty('language')) {
+    // Check the single string
     i18nCheck = i18n.language.toLowerCase() === 'en' || i18n.language.toLowerCase() === 'en-';
+
+    // const i18nCheck = i18n.languages.toLowerCase().includes('en') || i18n.languages.toLowerCase().includes('en-');
   }
 
   return (
