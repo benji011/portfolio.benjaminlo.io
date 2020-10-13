@@ -49,7 +49,7 @@
     "build": "gatsby build",
     "start": "gatsby develop -o",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "yarn prettier --write src/",
     "reset": "rm -rf .cache/ public/",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

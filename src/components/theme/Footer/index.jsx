@@ -78,7 +78,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               aria-label={`follow me on ${name}`}
             >
-              <img width="24" src={icon} alt={name} />
+              <img className="social" width="24" src={icon} alt={name} />
             </a>
           ))}
         </Links>

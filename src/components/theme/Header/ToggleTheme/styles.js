@@ -17,5 +17,9 @@ export const Wrapper = styled.button`
 
   img {
     margin-bottom: unset;
+
+    &:hover {
+      mix-blend-mode: difference;
+    }
   }
 `;
