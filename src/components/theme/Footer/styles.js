@@ -49,6 +49,10 @@ export const Links = styled.div`
       margin: 10;
     }
   }
+
+  .social:hover {
+    mix-blend-mode: difference;
+  }
 `;
 
 export const Details = styled.div`
