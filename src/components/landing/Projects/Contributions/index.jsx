@@ -20,7 +20,7 @@ export const Contributions = () => {
         search(
           query: "author:benji011 is:public is:pr created:>2020-01-01"
           type: ISSUE
-          first: 8
+          first: 12
         ) {
           edges {
             node {
