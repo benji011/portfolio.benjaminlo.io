@@ -22,8 +22,6 @@ import GithubIcon from "~/static/icons/github_light.svg";
 import VercelIconDark from "~/static/icons/vercel.svg";
 import VercelIcon from "~/static/icons/vercel_light.svg";
 
-import footer from "~/data/theme/footer.json";
-
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
