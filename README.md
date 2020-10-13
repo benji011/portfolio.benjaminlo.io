@@ -16,6 +16,10 @@ My personal portfolio website forked from [Gatsby-theme-portfolio](https://githu
 
 Author of template - Ismail Ghallou (@Smakosh)
 
+## Contributors
+
+- [martink-rsa](https://github.com/martink-rsa) - https://github.com/benji011/portfolio.benjaminlo.io/pull/9
+
 ## License (What you can & cannot use)
 
 The MIT License (MIT)
