@@ -5,13 +5,14 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { ThemeContext } from "providers/ThemeProvider";
 import { css } from "@emotion/core";
 import { Container, Button } from "components/common";
+import { useTranslation } from "react-i18next";
 import resume_light from "assets/illustrations/resume_light.svg";
 import { Wrapper, ResumeWrapper, Details, Thumbnail } from "./styles";
 
-import resume from "~/data/landing/resume.json";
-
 export const Resume = () => {
   const { theme } = useContext(ThemeContext);
+  const { t, i18n } = useTranslation();
+
   const darkBtn = `background-color: #272c3e;
      color: #fff;
     `;
@@ -19,21 +20,21 @@ export const Resume = () => {
      color: #272c3e;
     `;
   const button = theme === "light" ? darkBtn : lightBtn;
-  const companies = resume.companies;
-  const schools = resume.schools;
-  const technicalSkills = resume.technicalskills;
-  const certificates = resume.certificates;
+  const companies = t("resume:companies", { returnObjects: true });
+  const schools = t("resume:schools", { returnObjects: true });
+  const technicalSkills = t("resume:technical skills", { returnObjects: true });
+  const certificates = t("resume:certificates", { returnObjects: true });
 
   return (
     <Wrapper id="resume">
       <ResumeWrapper as={Container}>
         <Details theme={theme}>
-          <h1>{resume.resume}</h1>
+          <h1>{t("resume:resume")}</h1>
           <Tabs>
             <TabList className={theme === "light" ? "light-tab" : "dark-tab"}>
-              <Tab>{resume.experience}</Tab>
-              <Tab>{resume.education}</Tab>
-              <Tab>{resume.technologies}</Tab>
+              <Tab>{t("resume:experience")}</Tab>
+              <Tab>{t("resume:education")}</Tab>
+              <Tab>{t("resume:technologies")}</Tab>
             </TabList>
 
             <TabPanel>
@@ -50,7 +51,7 @@ export const Resume = () => {
                 </div>
               ))}
               <Button css={button} as={AnchorLink} href="#contact">
-                {resume.requestFullResume}
+                {t("resume:request full resume")}
               </Button>
             </TabPanel>
             <TabPanel>
@@ -67,7 +68,7 @@ export const Resume = () => {
                 </div>
               ))}
               <Button css={button} as={AnchorLink} href="#contact">
-                {resume.requestFullResume}
+                {t("resume:request full resume")}
               </Button>
             </TabPanel>
             <TabPanel>
