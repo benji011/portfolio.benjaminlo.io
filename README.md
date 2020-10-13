@@ -31,7 +31,6 @@ All content in this repository (except for anything under & `i18n` highlighted b
 You may **NOT** use anything under this directory or the contents of these files. You **CAN** however, use the file and folder structure + extension files as reference for your own personal use.
 
 ```bash
-...
 i18n
 ├── app.json
 ├── contact
