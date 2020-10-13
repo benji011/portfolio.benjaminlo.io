@@ -58,7 +58,7 @@ export const Skills = () => {
         </Thumbnail>
         <Details theme={theme}>
           <h1>{t("skills:title")}</h1>
-          <p>{t("skills:about me")}</p>
+          <p>{t("skills:about me", {count: getYearsOfExperience()})}</p>
           <Button css={button} as={AnchorLink} href="#contact">
             {t("intro:contact me")}
           </Button>
