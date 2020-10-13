@@ -12,9 +12,14 @@ const ToggleLanguage = () => {
   // Change language function
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    console.log('CLICK', lng);
   };
 
-  const i18nCheck = i18n.language.toLowerCase().includes('en') || i18n.language.toLowerCase().includes('en-');
+  let i18nCheck = 'en';
+
+  if (i18n.hasOwnProperty('language')) {
+    i18nCheck = i18n.language.toLowerCase() === 'en' || i18n.language.toLowerCase() === 'en-';
+  }
 
   return (
     <Wrapper type="button">
