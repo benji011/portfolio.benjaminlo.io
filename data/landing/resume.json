@@ -1,0 +1,70 @@
+{
+  "resume": "Resume",
+  "experience": "Experience",
+  "education": "Education",
+  "technologies": "Technologies & certs",
+  "companies": [
+    {
+      "title": "beBit Inc - Full Stack Engineer",
+      "duration": "2018/12 - Present",
+      "experience": [
+        "Developed the backend API endpoints & MySQL DB connections using Django & Django Rest Framework.",
+        "Implementing & maintaining features for the frontend using Vue.JS & Node.js",
+        "Built the REST API service for 3 features (segmented-trends, user-trends, repeat-search) that executes the AWS Athena queries & paginates the results which is then parsed in Django for the frontend.",
+        "Upgraded deprecated packages, severity issues & improved development experience for other developers in other teams (e.g. Generating Makefiles, upgrade Django 1.10 to 1.11, Python 2.7 to 3.7, creating new Docker images etc)."
+      ]
+    },
+    {
+      "title": "ikkai Inc - Lead Senior Engineer",
+      "duration": "2017/06 - 2018/11",
+      "experience": [
+        "Created cloud services for the platform using Lambda & Api Gateway in AWS.",
+        "Managed cloud data, including fixing data discrepancies.",
+        "Created Api endpoints & backend features in Django.",
+        "Implementing frontend UI components & web app features using ReactJS, Redux, Webpack & Node.js",
+        "As the lead & engineering supervisor I upskilled interns & other engineers (Japanese & English)."
+      ]
+    }
+  ],
+  "requestFullResume": "Request my full resume!",
+  "schools": [
+    {
+      "name": "NILS Japanese school - 1 year study abroad",
+      "duration": "2013/4 - 2014/3",
+      "description": [
+        "A full one year language course in Fukuoka, Japan."
+      ]
+    },
+    {
+      "name": "Oxford Brookes University - BSc Software Engineering & Japanese",
+      "duration": "2008 - 2011",
+      "description": [
+        "A study in computer science and its application in the real world of computer software engineering. Completed 4 years with a BSc degree."
+      ]
+    }
+  ],
+  "technicalskills": [
+    {
+      "key": "Frontend",
+      "items": "React.JS, Vue.JS, Gatsby, Jest, Enzyme, Cypress"
+    },
+    {
+      "key": "Backend",
+      "items": "Django, Django REST Framework, Laravel, Zend, MySQL, Postgres"
+    },
+    {
+      "key": "DevOps",
+      "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud"
+    }
+  ],
+  "certificates": [
+    {
+      "key": "Certificates",
+      "name": "AWS Certified Cloud Practitioner",
+      "ref": "See credentials",
+      "link": "https://www.youracclaim.com/badges/fcf4883c-c6c6-464c-a659-f89b122430ae/linked_in",
+      "issuer": "Amazon Web Services (AWS)",
+      "issuedDate": "Issued Sep 2020 ・ Expires Sep 2023"
+    }
+  ]
+}

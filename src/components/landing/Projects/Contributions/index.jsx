@@ -1,16 +1,13 @@
-import React, { useContext } from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { ThemeContext } from "providers/ThemeProvider";
-import { useTranslation } from "react-i18next";
-import { Container, Card } from "components/common";
-import Star from "components/common/Icons/Star";
-import Fork from "components/common/Icons/Fork";
-import PullRequest from "components/common/Icons/PullRequest";
-import { Wrapper, Grid, Item, Content, Stats } from "../styles";
+import React, { useContext } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { ThemeContext } from 'providers/ThemeProvider';
+import { Container, Card } from 'components/common';
+import Star from 'components/common/Icons/Star';
+import Fork from 'components/common/Icons/Fork';
+import { Wrapper, Grid, Item, Content, Stats } from '../styles';
 
 export const Contributions = () => {
   const { theme } = useContext(ThemeContext);
-  const { t, i18n } = useTranslation();
 
   const {
     github: {
@@ -20,11 +17,7 @@ export const Contributions = () => {
     {
       __typename
       github {
-        search(
-          query: "author:benji011 is:public is:pr created:>2020-01-01"
-          type: ISSUE
-          first: 8
-        ) {
+        search(query: "author:benji011 is:public is:pr created:>2020-01-01", type: ISSUE, first: 12) {
           edges {
             node {
               ... on GitHub_PullRequest {
@@ -54,19 +47,13 @@ export const Contributions = () => {
       {edges.map(({ node }) => (
         <li key={node.id}>
           <a
-            className={
-              theme === "light" ? "pr-title-light-title" : "pr-title-dark-title"
-            }
+            className={theme === 'light' ? 'pr-title-light-title' : 'pr-title-dark-title'}
             href={node.repository.url}
             target="_blank"
           >
-            [{node.repository.name}]{" - "}
+            [{node.repository.name}]{' - '}
           </a>
-          <a
-            className={theme === "light" ? "pr-title-light" : "pr-title-dark"}
-            href={node.url}
-            target="_blank"
-          >
+          <a className={theme === 'light' ? 'pr-title-light' : 'pr-title-dark'} href={node.url} target="_blank">
             {node.title}
           </a>
         </li>

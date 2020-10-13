@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "gatsby";
 import { ThemeContext } from "providers/ThemeProvider";
-import { useTranslation } from "react-i18next";
 import { Container } from "components/common";
 import { Wrapper, DarkWrapper, Item, Flex, Links, Details } from "./styles";
 import social_dark from "./social.json";
@@ -22,9 +21,10 @@ import GithubIcon from "~/static/icons/github_light.svg";
 import VercelIconDark from "~/static/icons/vercel.svg";
 import VercelIcon from "~/static/icons/vercel_light.svg";
 
+import footer from "~/data/theme/footer.json";
+
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
-  const { t, i18n } = useTranslation();
 
   const social = theme === "light" ? social_light : social_dark;
   const overlay =
@@ -36,15 +36,15 @@ export const Footer = () => {
   const Vercel = theme === "light" ? VercelIcon : VercelIconDark;
   const Smakosh = theme === "light" ? SmakoshIcon : SmakoshIconDark;
 
-  function getDetails() {
-    if (i18n.language.toLowerCase() == "en") {
-      return (
+  return (
+    <Wrapper css={overlay}>
+      <Flex as={Container}>
         <Details theme={theme}>
           <h2>Benjamin Lo</h2>©{" "}
           <a href="https://benjaminlo.io" target="_blank">
             Benjamin Lo
           </a>{" "}
-          {`${new Date().getFullYear()} `}- {t("footer:forked from")}
+          {`${new Date().getFullYear()} `}- {footer.forkedFrom}
           <a
             href="https://github.com/smakosh/gatsby-portfolio-dev"
             rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export const Footer = () => {
           >
             <Item width="24" src={Smakosh} img alt="Smakosh" />
           </a>
-          {t("footer:open sourced")}
+          {footer.opensourced}
           <a
             href="https://github.com/benji011/portfolio_gatsby"
             rel="noopener noreferrer"
@@ -60,7 +60,7 @@ export const Footer = () => {
           >
             <Item width="24" src={Github} img alt="GitHub" />
           </a>
-          {t("footer:deployed")}
+          {footer.deployed}
           <a
             href="https://vercel.com"
             rel="noopener noreferrer"
@@ -69,44 +69,6 @@ export const Footer = () => {
             <Item width="24" src={Vercel} img alt="Vercel" />
           </a>
         </Details>
-      );
-    } else {
-      return (
-        <Details theme={theme}>
-          <h2>Benjamin Lo</h2>© {`${new Date().getFullYear()} `}
-          <a
-            href="https://github.com/smakosh/gatsby-portfolio-dev"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <Item width="24" src={Smakosh} img alt="Smakosh" />
-          </a>
-          {t("footer:forked from")}
-          <a
-            href="https://github.com/benji011/portfolio_gatsby"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <Item width="24" src={Github} img alt="GitHub" />
-          </a>
-          {t("footer:open sourced")}
-          <a
-            href="https://vercel.com"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <Item width="24" src={Vercel} img alt="Vercel" />
-          </a>
-          {t("footer:deployed")}
-        </Details>
-      );
-    }
-  }
-
-  return (
-    <Wrapper css={overlay}>
-      <Flex as={Container}>
-        {getDetails()}
         <Links>
           {social.map(({ id, name, link, icon }) => (
             <a
@@ -116,7 +78,7 @@ export const Footer = () => {
               rel="noopener noreferrer"
               aria-label={`follow me on ${name}`}
             >
-              <img width="24" src={icon} alt={name} />
+              <img className="social" width="24" src={icon} alt={name} />
             </a>
           ))}
         </Links>
