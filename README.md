@@ -11,6 +11,8 @@ My personal portfolio website forked from [Gatsby-theme-portfolio](https://githu
 - fix i18n internationalization. See branch [wip/portfolio-ben-i18n](https://github.com/benji011/portfolio.benjaminlo.io/tree/wip/portfolio-ben-i18n) for more details
 - E2E tests
 - fix hamburger icon colour
+- fix ESLint
+- refactor some weird looking code
 
 ## Credits
 
