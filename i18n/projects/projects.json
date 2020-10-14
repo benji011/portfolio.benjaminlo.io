@@ -1,10 +1,10 @@
 {
   "en": {
-    "open source": "Open source projects",
-    "recent contributions": "Open source contributions"
+    "open source contributions": "Open source contributions",
+    "open source": "Open source projects"
   },
   "ja": {
-    "open source": "オープンソースプロジェクト",
-    "recent contributions": "オープンソースへの貢献"
+    "open source contributions": "オープンソースへの貢献",
+    "open source": "オープンソースプロジェクト"
   }
 }
