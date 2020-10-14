@@ -8,11 +8,9 @@ import Fork from "components/common/Icons/Fork";
 import { Wrapper, Grid, Item, Content, Stats } from "./styles";
 import { Contributions } from "./Contributions/index";
 
-import projects from "~/data/landing/projects.json";
-
 export const Projects = () => {
   const { theme } = useContext(ThemeContext);
-
+  const { t, i18n } = useTranslation();
   const {
     github: {
       viewer: {
@@ -49,9 +47,9 @@ export const Projects = () => {
 
   return (
     <Wrapper as={Container} id="projects">
-      <h2>{projects.contributions}</h2>
+      <h2>{t('projects:open source contributions')}</h2>
       <Contributions />
-      <h2>{projects.opensource}</h2>
+      <h2>{t('projects:open source')}</h2>
       <Grid>
         {edges.map(({ node }) => (
           <Item
