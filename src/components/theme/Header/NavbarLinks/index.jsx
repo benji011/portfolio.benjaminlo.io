@@ -16,31 +16,31 @@ const NavbarLinks = ({ desktop }) => {
         className={theme === "light" ? "dark-link" : "light-link"}
         href="#about"
       >
-        {t("header:about")}
+        {t("header:About")}
       </AnchorLink>
       <AnchorLink
         className={theme === "light" ? "dark-link" : "light-link"}
         href="#projects"
       >
-        {t("header:projects")}
+        {t("header:Projects")}
       </AnchorLink>
       <AnchorLink
         className={theme === "light" ? "dark-link" : "light-link"}
         href="#resume"
       >
-        {t("header:resume")}
+        {t("header:Resume")}
       </AnchorLink>
       <AnchorLink
         className={theme === "light" ? "dark-link" : "light-link"}
         href="#testimonials"
       >
-        {t("header:testimonials")}
+        {t("header:Trusted by")}
       </AnchorLink>
       <AnchorLink
         className={theme === "light" ? "dark-link" : "light-link"}
         href="#contact"
       >
-        {t("header:contact")}
+        {t("header:Contact")}
       </AnchorLink>
       <ToggleLanguage />
       <ToggleTheme />

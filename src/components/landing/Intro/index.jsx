@@ -40,14 +40,14 @@ export const Intro = () => {
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>{t("intro:hi")}</h1>
-          <h4>{t("intro:introduction")}</h4>
+          <h1>{t("intro:Hi there!")}</h1>
+          <h4>{t("intro:I’m Ben and I’m a full stack engineer!")}</h4>
           <Button css={button} as={AnchorLink} href="#contact">
-            {t("intro:contact me")}
+            {t("intro:Contact me")}
           </Button>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="intro:introduction" />
+          <img src={dev} alt="intro:I’m Ben and I’m a full stack engineer!" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

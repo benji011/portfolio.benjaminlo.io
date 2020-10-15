@@ -1,16 +1,16 @@
 {
   "en": {
-    "about": "About",
-    "projects": "Projects",
-    "resume": "Resume",
-    "testimonials": "Trusted by",
-    "contact": "Contact"
+    "About": "About",
+    "Projects": "Projects",
+    "Resume": "Resume",
+    "Trusted by": "Trusted by",
+    "Contact": "Contact"
   },
   "ja": {
-    "about": "自己紹介",
-    "projects": "プロジェクト",
-    "resume": "職務経歴",
-    "testimonials": "信頼されている方",
-    "contact": "お問い合わせ"
+    "About": "自己紹介",
+    "Projects": "プロジェクト",
+    "Resume": "職務経歴",
+    "Trusted by": "信頼されている方",
+    "Contact": "お問い合わせ"
   }
 }

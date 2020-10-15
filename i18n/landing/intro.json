@@ -1,12 +1,12 @@
 {
   "en": {
-    "hi": "Hi there!",
-    "introduction": "I’m Ben and I’m a full stack engineer!",
-    "contact me": "Contact me"
+    "Hi there!": "Hi there!",
+    "I’m Ben and I’m a full stack engineer!": "I’m Ben and I’m a full stack engineer!",
+    "Contact me": "Contact me"
   },
   "ja": {
-    "hi": "こんにちは！",
-    "introduction": "フルスタックエンジニア、Benです！",
-    "contact me": "お問い合わせ"
+    "Hi there!": "こんにちは！",
+    "I’m Ben and I’m a full stack engineer!": "フルスタックエンジニア、Benです！",
+    "Contact me": "お問い合わせ"
   }
 }
