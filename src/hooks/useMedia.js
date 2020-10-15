@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const useMedia = (queries, values, defaultValue) => {
   const [value, setValue] = useState(null);
@@ -8,9 +8,7 @@ const useMedia = (queries, values, defaultValue) => {
 
     const getValue = () => {
       const index = mediaQueryLists.findIndex((mql) => mql.matches);
-      return typeof values[index] !== "undefined"
-        ? values[index]
-        : defaultValue;
+      return typeof values[index] !== 'undefined' ? values[index] : defaultValue;
     };
 
     setValue(getValue);

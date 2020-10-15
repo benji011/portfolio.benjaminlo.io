@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 1.5rem 0;
@@ -28,7 +28,7 @@ export const Brand = styled.a`
   color: ${({ scrolled, theme }) => scrolled > 300 ? '#fff' : theme === "light" ? "#000" : "#fff"};
 
   &:hover {
-    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
+    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
     mix-blend-mode: difference;
   }
 

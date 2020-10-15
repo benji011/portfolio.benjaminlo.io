@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "providers/ThemeProvider";
-import { useTranslation } from "react-i18next";
-import { Wrapper } from "./styles";
+import React, { useContext } from 'react';
+import { ThemeContext } from 'providers/ThemeProvider';
+import { useTranslation } from 'react-i18next';
+import { Wrapper } from './styles';
 
 const ToggleLanguage = () => {
   const { theme, scrollPosition } = useContext(ThemeContext);
@@ -12,13 +12,11 @@ const ToggleLanguage = () => {
     i18n.changeLanguage(lng);
   };
 
-  let i18nCheck = "en";
+  let i18nCheck = 'en';
 
-  if (i18n.hasOwnProperty("language")) {
+  if (i18n.hasOwnProperty('language')) {
     // Check the single string
-    i18nCheck =
-      i18n.language.toLowerCase() === "en" ||
-      i18n.language.toLowerCase() === "en-";
+    i18nCheck = i18n.language.toLowerCase() === 'en' || i18n.language.toLowerCase() === 'en-';
   }
 
   return (

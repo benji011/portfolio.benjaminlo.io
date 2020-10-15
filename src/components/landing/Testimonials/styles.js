@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   background-size: contain;
@@ -37,7 +37,7 @@ export const Details = styled.div`
   h1 {
     margin-bottom: 2rem;
     font-size: 26pt;
-    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
+    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
 
     @media (max-width: 960px) {
       color: #fff;
@@ -53,12 +53,16 @@ export const Details = styled.div`
     }
   }
 
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
   h3 {
     margin-bottom: 3px;
   }
 
   h3 > a {
-    color: ${({ theme }) => (theme === "light" ? "#212121" : "#fff")};
+    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
     &:hover {
       mix-blend-mode: difference;
     }
@@ -70,7 +74,7 @@ export const Details = styled.div`
     font-size: 15pt;
     font-weight: normal;
     line-height: 1.3;
-    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#2d2d2d")};
+    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#2d2d2d')};
     white-space: pre-line;
 
     @media (max-width: 960px) {
@@ -84,11 +88,10 @@ export const Details = styled.div`
     font-size: 20pt;
     font-weight: normal;
     line-height: 1.3;
-    color: ${({ theme }) => (theme === "dark" ? "#c7c7c7" : "#2d2d2d")};
+    color: ${({ theme }) => (theme === 'dark' ? '#c7c7c7' : '#2d2d2d')};
 
     @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) =>
-        theme === "light" ? "unset" : "difference"};
+      mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
     }
   }
 `;

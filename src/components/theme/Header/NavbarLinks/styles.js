@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   a {
@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     text-decoration: none;
 
     @media (max-width: 960px) {
-      color: ${({ theme }) => (theme === "light" ? "#000" : "#fff")};
+      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
     }
 
     &:hover {

@@ -10,11 +10,7 @@ const ToggleTheme = () => {
 
   return (
     <Wrapper type="button" onClick={toggleTheme}>
-      <img
-        className="inverted-icon"
-        src={theme === "light" ? moonIcon : scrollPosition > 300 ? sunIcon-inverted : sunIcon}
-        alt={theme}
-      />
+      <img className="inverted-icon" src={theme === "light" ? moonIcon : scrollPosition > 300 ? sunIcon-inverted : sunIcon} alt={theme} />
     </Wrapper>
   );
 };

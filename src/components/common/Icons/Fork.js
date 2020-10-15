@@ -1,12 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const Fork = ({ width = 16, height = 16, color = "#000" }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    width={width}
-    height={height}
-  >
+const Fork = ({ width = 16, height = 16, color = '#000' }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={width} height={height}>
     <path
       fill={color}
       fillRule="evenodd"
@@ -17,11 +12,7 @@ const Fork = ({ width = 16, height = 16, color = "#000" }) => (
       fillRule="evenodd"
       d="M6.5 7.75v1A2.25 2.25 0 008.75 11h6.5a2.25 2.25 0 002.25-2.25v-1H19v1a3.75 3.75 0 01-3.75 3.75h-6.5A3.75 3.75 0 015 8.75v-1h1.5z"
     ></path>
-    <path
-      fill={color}
-      fillRule="evenodd"
-      d="M11.25 16.25v-5h1.5v5h-1.5z"
-    ></path>
+    <path fill={color} fillRule="evenodd" d="M11.25 16.25v-5h1.5v5h-1.5z"></path>
   </svg>
 );
 
