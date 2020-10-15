@@ -7,37 +7,37 @@ import { useTranslation } from "react-i18next";
 import { Wrapper } from "./styles";
 
 const NavbarLinks = ({ desktop }) => {
-  const { theme } = useContext(ThemeContext);
+  const { theme, scrollPosition } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
       <AnchorLink
-        className={theme === "light" ? "dark-link" : "light-link"}
+        className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"}
         href="#about"
       >
         {t("header:about")}
       </AnchorLink>
       <AnchorLink
-        className={theme === "light" ? "dark-link" : "light-link"}
+        className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"}
         href="#projects"
       >
         {t("header:projects")}
       </AnchorLink>
       <AnchorLink
-        className={theme === "light" ? "dark-link" : "light-link"}
+        className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"}
         href="#resume"
       >
         {t("header:resume")}
       </AnchorLink>
       <AnchorLink
-        className={theme === "light" ? "dark-link" : "light-link"}
+        className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"}
         href="#testimonials"
       >
         {t("header:testimonials")}
       </AnchorLink>
       <AnchorLink
-        className={theme === "light" ? "dark-link" : "light-link"}
+        className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"}
         href="#contact"
       >
         {t("header:contact")}

@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Wrapper } from "./styles";
 
 const ToggleLanguage = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme, scrollPosition } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
 
   // Change language function
@@ -23,7 +23,7 @@ const ToggleLanguage = () => {
 
   return (
       <a
-        className={theme === "light" ? "dark-link" : "light-link"}
+        className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"}
         onClick={() => changeLanguage(i18nCheck ? "ja" : "en")}
       >
         {(i18nCheck) ? "日本語" : "ENG"}

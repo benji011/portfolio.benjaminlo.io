@@ -5,13 +5,13 @@ import moonIcon from "assets/icons/moon.svg";
 import { Wrapper } from "./styles";
 
 const ToggleTheme = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, scrollPosition, toggleTheme } = useContext(ThemeContext);
 
   return (
     <Wrapper type="button" onClick={toggleTheme}>
       <img
         className="inverted-icon"
-        src={theme === "light" ? moonIcon : sunIcon}
+        src={theme === "light" ? moonIcon : sunIcon} //Todo: Add Light Icon for scrolled navbar
         alt={theme}
       />
     </Wrapper>

@@ -6,11 +6,11 @@ import NavbarLinks from "../NavbarLinks";
 import { Wrapper, Brand } from "./styles";
 
 const Navbar = () => {
-  const { theme } = useContext(ThemeContext);
+  const { theme, scrollPosition } = useContext(ThemeContext);
 
   return (
     <Wrapper as={Container}>
-      <Brand as={Link} to="/" theme={theme}>
+      <Brand as={Link} to="/" scrolled={scrollPosition} theme={theme}>
         Benjamin Lo
       </Brand>
       <NavbarLinks desktop />
