@@ -6,6 +6,7 @@ import footer from './footer/footer.json';
 import projects from './projects/projects.json';
 import resume from './resume/resume.json';
 import skills from './skills/skills.json';
+import testimonials from './testimonials/testimonials.json';
 import contactform from './contact/contactform.json';
 
 i18n.use(initReactI18next).init({
@@ -51,6 +52,12 @@ const i18nResourceBundlesViews = [
       en: { ...contactform.en },
       ja: { ...contactform.ja },
     },
+  },
+  {
+    testimonials: {
+      en: { ...testimonials.en },
+      ja: { ...testimonials.ja },
+    }
   },
 ];
 
