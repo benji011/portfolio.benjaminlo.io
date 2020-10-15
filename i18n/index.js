@@ -57,7 +57,7 @@ const i18nResourceBundlesViews = [
     testimonials: {
       en: { ...testimonials.en },
       ja: { ...testimonials.ja },
-    }
+    },
   },
 ];
 
