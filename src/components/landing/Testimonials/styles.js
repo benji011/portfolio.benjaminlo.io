@@ -53,6 +53,10 @@ export const Details = styled.div`
     }
   }
 
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
   h3 {
     margin-bottom: 3px;
   }
