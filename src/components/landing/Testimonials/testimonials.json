@@ -1,0 +1,22 @@
+[
+  {
+    "id": 0,
+    "image": "icons/testimonials/1.png",
+    "name": "Thomas Pouplin",
+    "company": "ikkai Inc",
+    "role": "ikkai",
+    "header": "Ben was able to rebuild our entire platform and add on features essential to the growth of the business ..",
+    "testimonial": "I rarely come across real talents who stand out like Ben. Ben entered our company at a crucial time. Thanks to his expertise and critical thinking, Ben was able to rebuild our entire platform and add on features essential to the growth of the business. \n\nBen's ability to handle multiple projects was unlike any I’ve seen before and made a dramatic increase in the productivity level of our company. Ben is also a real team player, very good communicator who listens to his colleagues and never lets anyone feel unworthy or unheard. Have had the chance to see Ben go above and beyond his tech duties, trying to understand the business side of the company to make sure he was grasping every aspect it. As a team member or a leader, Ben earns my highest recommendation.",
+    "linkedin": "https://www.linkedin.com/in/thomas-pouplin-992aa051/"
+  },
+  {
+    "id": 1,
+    "image": "icons/testimonials/0.png",
+    "name": "Eido Inoue",
+    "company": "beBit Inc",
+    "role": "Engineering Director",
+    "header": "A very versatile engineer, he was requested and used in roles that could not be filled by other software engineers..",
+    "testimonial": "I had the pleasure of working with Ben through my time at beBit. A very versatile engineer, he was requested and used in roles that could not be filled by other software engineers. For example, he was often assigned to task force groups to solve problems outside of the traditional development roadmap for the core product (ex. how to retrofix fixes onto legacy and current products to support or workaround compliance with ITP 2.3 and new browser privacy measures). Additionally, his Japanese is good enough that we could confidently pair him with either non-Japanese engineers or all Japanese language work groups... including those that comprised of mainly non-technical people.\n\nBen was a good team player, and was respected by all of his colleagues. Additionally, because his position was remote, he was extremely good and proactive regarding communication (via the usual methods such as Slack, Zoom, etc) and very few people in the Tokyo headquarters would notice that he wasn't actually physically present.\n\nFinally, his code quality was good in the eyes of reviewers, and he was very good at providing feedback on other people's PRs as well as providing advice and leading by example in the eyes of more junior software engineers. ",
+    "linkedin": "https://www.linkedin.com/in/havill/"
+  }
+]
