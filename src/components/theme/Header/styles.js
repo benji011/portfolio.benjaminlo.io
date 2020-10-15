@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background: transparent;
+  background: ${({ scrolled }) => scrolled > 300 ? '#212121' : 'transparent'};
   width: 100%;
+  position: fixed;
+  z-index: 99;
 `;
 
 export const Overlay = styled.div`
@@ -17,6 +19,6 @@ export const Overlay = styled.div`
     sidebar &&
     `
 			display: block;
-			z-index: 4;	
+			z-index: 4;
 	`}
 `;
