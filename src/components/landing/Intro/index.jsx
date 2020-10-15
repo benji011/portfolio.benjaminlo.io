@@ -1,21 +1,21 @@
-import React, { useContext } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { ThemeContext } from "providers/ThemeProvider";
-import { Header } from "components/theme";
-import { Container, Button } from "components/common";
-import { useTranslation } from "react-i18next";
-import dev from "assets/illustrations/dev_light.svg";
-import { css } from "@emotion/core";
+import React, { useContext } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { ThemeContext } from 'providers/ThemeProvider';
+import { Header } from 'components/theme';
+import { Container, Button } from 'components/common';
+import { useTranslation } from 'react-i18next';
+import dev from 'assets/illustrations/dev_light.svg';
+import { css } from '@emotion/core';
 
-import overlayIllustrationDark from "assets/illustrations/overlay.svg";
-import overlayIllustrationLight from "assets/illustrations/overlay_light.svg";
-import { Wrapper, IntroWrapper, Details, Thumbnail } from "./styles";
+import overlayIllustrationDark from 'assets/illustrations/overlay.svg';
+import overlayIllustrationLight from 'assets/illustrations/overlay_light.svg';
+import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
   const { t, i18n } = useTranslation();
   const overlay =
-    theme === "light"
+    theme === 'light'
       ? `background-image: url(${overlayIllustrationLight});`
       : `background-image: url(${overlayIllustrationDark});`;
   const darkBtn = `background-color: #272c3e;
@@ -33,17 +33,17 @@ export const Intro = () => {
       color: #fff;
     }
     `;
-  const button = theme === "light" ? darkBtn : lightBtn;
+  const button = theme === 'light' ? darkBtn : lightBtn;
 
   return (
     <Wrapper css={overlay}>
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>{t("intro:Hi there!")}</h1>
-          <h4>{t("intro:I’m Ben and I’m a full stack engineer!")}</h4>
+          <h1>{t('intro:Hi there!')}</h1>
+          <h4>{t('intro:I’m Ben and I’m a full stack engineer!')}</h4>
           <Button css={button} as={AnchorLink} href="#contact">
-            {t("intro:Contact me")}
+            {t('intro:Contact me')}
           </Button>
         </Details>
         <Thumbnail>

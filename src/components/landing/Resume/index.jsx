@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import { ThemeContext } from "providers/ThemeProvider";
-import { css } from "@emotion/core";
-import { Container, Button } from "components/common";
-import { useTranslation } from "react-i18next";
-import resume_light from "assets/illustrations/resume_light.svg";
-import { Wrapper, ResumeWrapper, Details, Thumbnail } from "./styles";
+import React, { useContext } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { ThemeContext } from 'providers/ThemeProvider';
+import { css } from '@emotion/core';
+import { Container, Button } from 'components/common';
+import { useTranslation } from 'react-i18next';
+import resume_light from 'assets/illustrations/resume_light.svg';
+import { Wrapper, ResumeWrapper, Details, Thumbnail } from './styles';
 
 export const Resume = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,31 +19,35 @@ export const Resume = () => {
   const lightBtn = `background-color: #fff;
      color: #272c3e;
     `;
-  const button = theme === "light" ? darkBtn : lightBtn;
-  let companies = t("resume:companies", { returnObjects: true });
-  let schools = t("resume:schools", { returnObjects: true });
-  let technicalSkills = t("resume:technical skills", { returnObjects: true });
-  let certificates = t("resume:certificates", { returnObjects: true });
+  const button = theme === 'light' ? darkBtn : lightBtn;
+  let companies = t('resume:companies', { returnObjects: true });
+  let schools = t('resume:schools', { returnObjects: true });
+  let technicalSkills = t('resume:technical skills', { returnObjects: true });
+  let certificates = t('resume:certificates', { returnObjects: true });
 
   /**
    * Load content if the array of object translations exist and is properly loaded.
    */
   function loadContent() {
     if (
-      Array.isArray(companies) && companies.length
-      && Array.isArray(schools) && schools.length
-      && Array.isArray(technicalSkills) && technicalSkills.length
-      && Array.isArray(certificates) && certificates.length
+      Array.isArray(companies) &&
+      companies.length &&
+      Array.isArray(schools) &&
+      schools.length &&
+      Array.isArray(technicalSkills) &&
+      technicalSkills.length &&
+      Array.isArray(certificates) &&
+      certificates.length
     ) {
       return (
         <ResumeWrapper as={Container}>
           <Details theme={theme}>
-            <h1>{t("resume:resume")}</h1>
+            <h1>{t('resume:resume')}</h1>
             <Tabs>
-              <TabList className={theme === "light" ? "light-tab" : "dark-tab"}>
-                <Tab>{t("resume:experience")}</Tab>
-                <Tab>{t("resume:education")}</Tab>
-                <Tab>{t("resume:technologies")}</Tab>
+              <TabList className={theme === 'light' ? 'light-tab' : 'dark-tab'}>
+                <Tab>{t('resume:experience')}</Tab>
+                <Tab>{t('resume:education')}</Tab>
+                <Tab>{t('resume:technologies')}</Tab>
               </TabList>
 
               <TabPanel>
@@ -60,7 +64,7 @@ export const Resume = () => {
                   </div>
                 ))}
                 <Button css={button} as={AnchorLink} href="#contact">
-                  {t("resume:request full resume")}
+                  {t('resume:request full resume')}
                 </Button>
               </TabPanel>
               <TabPanel>
@@ -77,7 +81,7 @@ export const Resume = () => {
                   </div>
                 ))}
                 <Button css={button} as={AnchorLink} href="#contact">
-                  {t("resume:request full resume")}
+                  {t('resume:request full resume')}
                 </Button>
               </TabPanel>
               <TabPanel>
@@ -95,11 +99,7 @@ export const Resume = () => {
                         <h5 className="cert-header">{cert.name}</h5>
                         <p className="cert-text">{cert.issuer}</p>
                         <p className="cert-text">{cert.issuedDate}</p>
-                        <a
-                          className="certificates"
-                          href={cert.link}
-                          target="_blank"
-                        >
+                        <a className="certificates" href={cert.link} target="_blank">
                           {cert.ref}
                         </a>
                       </td>
@@ -110,19 +110,12 @@ export const Resume = () => {
             </Tabs>
           </Details>
           <Thumbnail>
-            <img
-              src={resume_light}
-              alt="I’m Ben and I’m a Backend & Devops engineer!"
-            />
+            <img src={resume_light} alt="I’m Ben and I’m a Backend & Devops engineer!" />
           </Thumbnail>
         </ResumeWrapper>
       );
     }
   }
 
-  return (
-    <Wrapper id="resume">
-      {loadContent()}
-    </Wrapper>
-  );
+  return <Wrapper id="resume">{loadContent()}</Wrapper>;
 };
