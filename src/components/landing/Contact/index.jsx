@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "providers/ThemeProvider";
-import { Container } from "components/common";
-import contact from "assets/illustrations/contact_light.svg";
+import React, { useContext } from 'react';
+import { ThemeContext } from 'providers/ThemeProvider';
+import { Container } from 'components/common';
+import contact from 'assets/illustrations/contact_light.svg';
 
-import { Wrapper, Details, Thumbnail } from "./styles";
-import ContactForm from "./ContactForm";
+import { Wrapper, Details, Thumbnail } from './styles';
+import ContactForm from './ContactForm';
 
 export const Contact = () => {
   const { theme } = useContext(ThemeContext);
