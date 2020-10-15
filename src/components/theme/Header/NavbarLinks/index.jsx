@@ -32,6 +32,12 @@ const NavbarLinks = ({ desktop }) => {
       </AnchorLink>
       <AnchorLink
         className={theme === "light" ? "dark-link" : "light-link"}
+        href="#testimonials"
+      >
+        {t("header:testimonials")}
+      </AnchorLink>
+      <AnchorLink
+        className={theme === "light" ? "dark-link" : "light-link"}
         href="#contact"
       >
         {t("header:contact")}
