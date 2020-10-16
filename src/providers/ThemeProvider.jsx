@@ -7,9 +7,19 @@ export default ({ children }) => {
   const [theme, toggleTheme] = useDarkMode();
   const [scrollPosition, setScrollPosition] = useState(0)
 
+  let scrolling = false;
+
   document.addEventListener('scroll', () => {
-    setScrollPosition(window.scrollY)
-  })
+      scrolling = true;
+  },{ passive: true });
+
+  setInterval(() => {
+      if (scrolling) {
+          scrolling = false;
+          setScrollPosition(window.scrollY);
+          console.log(window.scrollY);
+      }
+  },500);
 
   return (
     <ThemeContext.Provider
