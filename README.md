@@ -21,6 +21,7 @@ Author of template - Ismail Ghallou (@Smakosh)
 ## Contributors
 
 - [martink-rsa](https://github.com/martink-rsa) - https://github.com/benji011/portfolio.benjaminlo.io/pull/9
+- [ankitbeniwal](https://github.com/ankitbeniwal) - https://github.com/benji011/portfolio.benjaminlo.io/pull/22
 
 ## License (What you can & cannot use)
 
