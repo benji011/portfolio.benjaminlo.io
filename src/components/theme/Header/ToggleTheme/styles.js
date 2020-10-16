@@ -22,4 +22,8 @@ export const Wrapper = styled.button`
       mix-blend-mode: difference;
     }
   }
+
+  .inverted-icon{
+    filter: ${({ scrolled }) => scrolled > 300 ? 'invert(1)' : 'invert(0)'};
+  }
 `;
