@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background: ${({ scrolled }) => scrolled > 300 ? '#212121' : 'transparent'};
+  background: ${({ scrolled }) => (scrolled > 80 ? '#212121' : 'transparent')};
   width: 100%;
   position: fixed;
   z-index: 99;

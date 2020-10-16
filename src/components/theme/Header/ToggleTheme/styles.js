@@ -23,7 +23,7 @@ export const Wrapper = styled.button`
     }
   }
 
-  .inverted-icon{
-    filter: ${({ scrolled }) => scrolled > 300 ? 'invert(1)' : 'invert(0)'};
+  .inverted-icon {
+    filter: ${({ scrolled }) => (scrolled > 80 ? 'invert(1)' : 'invert(0)')};
   }
 `;

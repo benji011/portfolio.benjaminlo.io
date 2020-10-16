@@ -20,12 +20,12 @@ const ToggleLanguage = () => {
   }
 
   return (
-      <a
-        className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"}
-        onClick={() => changeLanguage(i18nCheck ? "ja" : "en")}
-      >
-        {(i18nCheck) ? "日本語" : "ENG"}
-      </a>
+    <a
+      className={scrollPosition > 80 ? 'dark-link' : theme === 'light' ? 'dark-link' : 'light-link'}
+      onClick={() => changeLanguage(i18nCheck ? 'ja' : 'en')}
+    >
+      {i18nCheck ? '日本語' : 'ENG'}
+    </a>
   );
 };
 

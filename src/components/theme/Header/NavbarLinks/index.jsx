@@ -12,19 +12,34 @@ const NavbarLinks = ({ desktop }) => {
 
   return (
     <Wrapper desktop={desktop} theme={theme}>
-      <AnchorLink className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"} href="#about">
+      <AnchorLink
+        className={scrollPosition > 300 ? 'dark-link' : theme === 'light' ? 'dark-link' : 'light-link'}
+        href="#about"
+      >
         {t('header:About')}
       </AnchorLink>
-      <AnchorLink className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"} href="#projects">
+      <AnchorLink
+        className={scrollPosition > 300 ? 'dark-link' : theme === 'light' ? 'dark-link' : 'light-link'}
+        href="#projects"
+      >
         {t('header:Projects')}
       </AnchorLink>
-      <AnchorLink className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"} href="#resume">
+      <AnchorLink
+        className={scrollPosition > 300 ? 'dark-link' : theme === 'light' ? 'dark-link' : 'light-link'}
+        href="#resume"
+      >
         {t('header:Resume')}
       </AnchorLink>
-      <AnchorLink className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"} href="#testimonials">
+      <AnchorLink
+        className={scrollPosition > 300 ? 'dark-link' : theme === 'light' ? 'dark-link' : 'light-link'}
+        href="#testimonials"
+      >
         {t('header:Trusted by')}
       </AnchorLink>
-      <AnchorLink className={scrollPosition > 300 ? "dark-link" : theme === "light" ? "dark-link" : "light-link"} href="#contact">
+      <AnchorLink
+        className={scrollPosition > 300 ? 'dark-link' : theme === 'light' ? 'dark-link' : 'light-link'}
+        href="#contact"
+      >
         {t('header:Contact')}
       </AnchorLink>
       <ToggleLanguage />

@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.a`
-  color: ${({ scrolled, theme }) => scrolled > 300 ? '#fff' : theme === "light" ? "#000" : "#fff"};
+  color: ${({ scrolled, theme }) => (scrolled > 300 ? '#fff' : theme === 'light' ? '#000' : '#fff')};
 
   &:hover {
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
