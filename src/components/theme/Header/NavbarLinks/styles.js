@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   a {
-    color: #000;
+    color: ${({ hasScrolled, theme }) => (hasScrolled || theme === 'light' ? '#fff' : '#000')};
+    mix-blend-mode: difference;
     text-decoration: none;
 
     @media (max-width: 960px) {

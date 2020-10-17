@@ -22,4 +22,8 @@ export const Wrapper = styled.button`
       mix-blend-mode: difference;
     }
   }
+
+  filter: ${({ theme, hasScrolled }) =>
+    theme !== 'light' ? (hasScrolled ? 'invert(100%) brightness(100%);' : 'none') : 'none'};
+  }
 `;
