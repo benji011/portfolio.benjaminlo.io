@@ -4,12 +4,12 @@ import sunIcon from 'assets/icons/sun.svg';
 import moonIcon from 'assets/icons/moon.svg';
 import { Wrapper } from './styles';
 
-const ToggleTheme = () => {
-  const { theme, scrollPosition, toggleTheme } = useContext(ThemeContext);
+const ToggleTheme = ({ hasScrolled }) => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <Wrapper type="button" onClick={toggleTheme} scrolled={scrollPosition}>
-      <img className="inverted-icon" src={theme === 'light' ? moonIcon : sunIcon} alt={theme} />
+    <Wrapper type="button" onClick={toggleTheme} theme={theme} hasScrolled={hasScrolled}>
+      <img src={theme === 'light' ? moonIcon : sunIcon} alt={theme} />
     </Wrapper>
   );
 };

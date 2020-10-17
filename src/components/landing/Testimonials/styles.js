@@ -45,6 +45,11 @@ export const Details = styled.div`
     }
   }
 
+  summary {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
   summary > h2 {
     &:hover {
       cursor: pointer;

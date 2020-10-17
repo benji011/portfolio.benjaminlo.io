@@ -23,7 +23,7 @@ export const Wrapper = styled.button`
     }
   }
 
-  .inverted-icon {
-    filter: ${({ scrolled }) => (scrolled > 80 ? 'invert(1)' : 'invert(0)')};
+  filter: ${({ theme, hasScrolled }) =>
+    theme !== 'light' ? (hasScrolled ? 'invert(100%) brightness(100%);' : 'none') : 'none'};
   }
 `;

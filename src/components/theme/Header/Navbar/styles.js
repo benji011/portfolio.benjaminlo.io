@@ -5,27 +5,11 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  .light-link {
-    color: #000;
-
-    &:hover {
-      color: #212121;
-      mix-blend-mode: difference;
-    }
-  }
-
-  .dark-link {
-    color: #fff;
-
-    &:hover {
-      mix-blend-mode: difference;
-    }
-  }
 `;
 
 export const Brand = styled.a`
-  color: ${({ scrolled, theme }) => (scrolled > 300 ? '#fff' : theme === 'light' ? '#000' : '#fff')};
+  // Basically just change colour depending on whether its light mode or not & whether navbar is true
+  color: ${({ theme, hasScrolled }) => (theme === 'light' ? (hasScrolled ? '#fff' : '#000') : '#fff')};
 
   &:hover {
     color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};

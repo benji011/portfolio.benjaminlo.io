@@ -5,15 +5,15 @@ import { Container } from 'components/common';
 import NavbarLinks from '../NavbarLinks';
 import { Wrapper, Brand } from './styles';
 
-const Navbar = () => {
-  const { theme, scrollPosition } = useContext(ThemeContext);
+const Navbar = ({ hasScrolled, desktop }) => {
+  const { theme } = useContext(ThemeContext);
 
   return (
     <Wrapper as={Container}>
-      <Brand as={Link} to="/" scrolled={scrollPosition} theme={theme}>
+      <Brand hasScrolled={hasScrolled} as={Link} to="/" theme={theme}>
         Benjamin Lo
       </Brand>
-      <NavbarLinks desktop />
+      <NavbarLinks hasScrolled={hasScrolled} desktop />
     </Wrapper>
   );
 };
