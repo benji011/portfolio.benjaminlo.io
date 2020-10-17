@@ -6,18 +6,20 @@ import { Wrapper, Overlay } from './styles';
 
 export const Header = () => {
   const [sidebar, toggle] = useState(false);
-  const [navBar, setNavBar] = useState(false);
+  const [hasScrolled, setNavBar] = useState(false);
 
-  document.addEventListener('scroll', () => {
-    const threshold = 80;
-    let scrolledAboveThreshold = window.scrollY >= threshold ? true : false;
-    setNavBar(scrolledAboveThreshold);
-  });
+  if (typeof document !== `undefined`) {
+    document.addEventListener('scroll', () => {
+      const threshold = 80;
+      let scrolledAboveThreshold = window.scrollY >= threshold ? true : false;
+      setNavBar(scrolledAboveThreshold);
+    });
+  }
 
   return (
-    <Wrapper navBar={navBar}>
+    <Wrapper hasScrolled={hasScrolled}>
       <Overlay sidebar={sidebar} onClick={() => toggle(!sidebar)} />
-      <Navbar />
+      <Navbar hasScrolled={hasScrolled} />
       <Hamburger sidebar={sidebar} toggle={toggle} />
       <Sidebar sidebar={sidebar} toggle={toggle} />
     </Wrapper>

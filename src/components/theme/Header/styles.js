@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.header`
-  background: ${({ navBar }) => (navBar ? '#222' : 'transparent')};
-  box-shadow: ${({ navBar }) =>
-    navBar ? '0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46);' : 'none'};
+  background: ${({ hasScrolled }) => (hasScrolled ? '#222' : 'transparent')};
+  box-shadow: ${({ hasScrolled }) =>
+    hasScrolled ? '0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(33, 33, 33, 0.46);' : 'none'};
   transition: all 0.5s ease !important;
   width: 100%;
   position: fixed;
