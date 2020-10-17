@@ -9,8 +9,9 @@ export const Header = () => {
   const [navBar, setNavBar] = useState(false);
 
   document.addEventListener('scroll', () => {
-    let hasScrolled = window.scrollY >= 80 ? true : false;
-    setNavBar(hasScrolled);
+    const threshold = 80;
+    let scrolledAboveThreshold = window.scrollY >= threshold ? true : false;
+    setNavBar(scrolledAboveThreshold);
   });
 
   return (
