@@ -3,36 +3,18 @@ name: Node CI environment
 on: [pull_request]
 
 jobs:
-  lint:
+  build:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [10.x]
-
+        node-version: [10]
     steps:
       - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: npm login
-        run:
-          npm config set //registry.npmjs.org/:_authToken=$NPM_READONLY_AUTH_TOKEN
-        env:
-          NPM_READONLY_AUTH_TOKEN: ${{ secrets.NPM_READONLY_AUTH_TOKEN }}
-
-      - name: npm install
-        working-directory: .
-        run: npm i --ignore-scripts
-
-      - name: Run ESLint
-        uses: ninosaurus/eslint-check@v5
-        with:
-          eslint-config-path: ".eslintrc"
-          custom-directory: "."
-          repo-token: ${{secrets.GITHUB_TOKEN}}
+      - name: yarn install, eslint
+        run: |
+          yarn
+          yarn eslint
