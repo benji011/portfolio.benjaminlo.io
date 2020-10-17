@@ -8,7 +8,7 @@ const Sidebar = ({ sidebar, toggle }) => {
 
   return (
     <Wrapper active={sidebar} onClick={toggle} theme={theme}>
-      <NavbarLinks />
+      <NavbarLinks active={sidebar} />
     </Wrapper>
   );
 };

@@ -26,5 +26,13 @@ export const Wrapper = styled.div`
 			@media (max-width: 600px) {
 				width: 75%;
 			}
+
+      a {
+        mix-blend-mode: unset !important;
+      }
+
+      button {
+        filter: invert(100%) brightness(100%);
+      }
 	`}
 `;
