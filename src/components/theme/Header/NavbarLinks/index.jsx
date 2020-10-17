@@ -18,7 +18,7 @@ const NavbarLinks = ({ hasScrolled, desktop }) => {
       <AnchorLink href="#testimonials">{t('header:Trusted by')}</AnchorLink>
       <AnchorLink href="#contact">{t('header:Contact')}</AnchorLink>
       <ToggleLanguage />
-      <ToggleTheme />
+      <ToggleTheme hasScrolled={hasScrolled} />
     </Wrapper>
   );
 };
