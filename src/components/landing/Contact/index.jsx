@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container } from 'components/common';
-import contact from 'assets/illustrations/contact_light.svg';
+import contact from 'assets/illustrations/team_meeting_.svg';
 
 import { Wrapper, Details, Thumbnail } from './styles';
 import ContactForm from './ContactForm';
