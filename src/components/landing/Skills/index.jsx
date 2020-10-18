@@ -3,8 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import { useTranslation } from 'react-i18next';
-import dev_light from 'assets/illustrations/skills_light.svg';
-import dev_dark from 'assets/illustrations/skills_dark.svg';
+import dev_light from 'assets/illustrations/startup_.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles';
 import { css } from '@emotion/core';
 

@@ -3,7 +3,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import { useTranslation } from 'react-i18next';
-import dev from 'assets/illustrations/dev_light.svg';
+import dev from 'assets/illustrations/code_development_.svg';
 import { css } from '@emotion/core';
 
 import overlayIllustrationDark from 'assets/illustrations/overlay.svg';

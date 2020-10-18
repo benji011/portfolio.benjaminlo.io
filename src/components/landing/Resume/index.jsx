@@ -6,7 +6,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { css } from '@emotion/core';
 import { Container, Button } from 'components/common';
 import { useTranslation } from 'react-i18next';
-import resume_light from 'assets/illustrations/resume_light.svg';
+import resume_light from 'assets/illustrations/career_.svg';
 import { Wrapper, ResumeWrapper, Details, Thumbnail } from './styles';
 
 export const Resume = () => {
