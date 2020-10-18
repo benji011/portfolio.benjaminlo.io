@@ -17,4 +17,4 @@ jobs:
       - name: yarn install, eslint
         run: |
           yarn
-          yarn eslint
+          yarn lint:dir src/
