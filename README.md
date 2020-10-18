@@ -1,5 +1,7 @@
 # portfolio.benjaminlo.io
 
+<img src="src/assets/screenshots/homepage.png"/>
+
 [![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.com?utm_source=smakosh)
 
 ## About
