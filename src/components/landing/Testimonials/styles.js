@@ -106,5 +106,6 @@ export const Thumbnail = styled.div`
 
   img {
     border-radius: 50%;
+    border: 3px solid rgb(216, 216, 216);
   }
 `;
