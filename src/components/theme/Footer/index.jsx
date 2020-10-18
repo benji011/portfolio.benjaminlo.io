@@ -46,7 +46,7 @@ export const Footer = () => {
           <a href="https://github.com/smakosh/gatsby-portfolio-dev" rel="noopener noreferrer" target="_blank">
             <Item width="24" src={Smakosh} img alt="Smakosh" />
           </a>
-          Smakoshopen sourced on
+          Smakosh open sourced on
           <a href="https://github.com/benji011/portfolio_gatsby" rel="noopener noreferrer" target="_blank">
             <Item width="24" src={Github} img alt="GitHub" />
           </a>
