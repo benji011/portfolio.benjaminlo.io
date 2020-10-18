@@ -1,3 +1,4 @@
+/* eslint-disable */
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -8,7 +9,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Brand = styled.a`
-  // Basically just change colour depending on whether its light mode or not & whether navbar is true
   color: ${({ theme, hasScrolled }) => (theme === 'light' ? (hasScrolled ? '#fff' : '#000') : '#fff')};
 
   &:hover {
