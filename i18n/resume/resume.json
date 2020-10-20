@@ -12,7 +12,7 @@
           "Developed the backend API endpoints & MySQL DB connections using Django & Django Rest Framework.",
           "Implementing & maintaining features for the frontend using Vue.JS & Node.js",
           "Built the REST API service for 3 features (segmented-trends, user-trends, repeat-search) that executes the AWS Athena queries & paginates the results which is then parsed in Django for the frontend.",
-          "Upgraded deprecated packages, severity issues & improved development experience for other developers in other teams (e.g. Generating Makefiles, upgrade Django 1.10 to 1.11, Python 2.7 to 3.7, creating new Docker images etc)."
+          "Upgraded deprecated packages, severity issues & improved development experience for other developers in other teams (e.g. Modifying Makefiles, upgrade Django 1.11.28 to 1.11.29, urllib3, Python 2.7 to 3.7, creating new Docker images etc)."
         ]
       },
       {
