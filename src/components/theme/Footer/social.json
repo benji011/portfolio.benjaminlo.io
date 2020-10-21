@@ -28,5 +28,11 @@
     "name": "Instagram",
     "link": "https://www.instagram.com/benjaminlo_dev",
     "icon": "/icons/instagram.svg"
+  },
+  {
+    "id": 6,
+    "name": "DEV",
+    "link": "https://dev.to/benji011",
+    "icon": "/icons/dev.svg"
   }
 ]
