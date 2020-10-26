@@ -2,7 +2,7 @@
 
 <img width="500px" src="src/assets/screenshots/homepage.png"/>
 
-[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.com?utm_source=smakosh)
+[![Powered by Digital Ocean](./powered-by-do.svg)](https://www.digitalocean.com?utm_source=benjaminlo)
 
 ## About
 
