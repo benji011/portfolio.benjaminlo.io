@@ -18,8 +18,8 @@ import SmakoshIcon from '~/static/icons/smakosh_light.svg';
 import GithubIconDark from '~/static/icons/github.svg';
 import GithubIcon from '~/static/icons/github_light.svg';
 
-import VercelIconDark from '~/static/icons/vercel.svg';
-import VercelIcon from '~/static/icons/vercel_light.svg';
+import DOIconDark from '~/static/icons/do.svg';
+import DOIcon from '~/static/icons/do_light.svg';
 
 export const Footer = () => {
   const { theme } = useContext(ThemeContext);
@@ -31,7 +31,7 @@ export const Footer = () => {
       : `background-image: url(${footerIllustrationDark});`;
 
   const Github = theme === 'light' ? GithubIcon : GithubIconDark;
-  const Vercel = theme === 'light' ? VercelIcon : VercelIconDark;
+  const DO = theme === 'light' ? DOIcon : DOIconDark;
   const Smakosh = theme === 'light' ? SmakoshIcon : SmakoshIconDark;
 
   return (
@@ -51,8 +51,8 @@ export const Footer = () => {
             <Item width="24" src={Github} img alt="GitHub" />
           </a>
           and deployed on
-          <a href="https://vercel.com" rel="noopener noreferrer" target="_blank">
-            <Item width="24" src={Vercel} img alt="Vercel" />
+          <a href="https://www.digitalocean.com/" rel="noopener noreferrer" target="_blank">
+            <Item width="24" src={DO} img alt="Digital Ocean" />
           </a>
         </Details>
         <Links>
