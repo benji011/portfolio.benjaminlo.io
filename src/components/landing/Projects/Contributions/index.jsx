@@ -18,7 +18,7 @@ export const Contributions = () => {
       __typename
       github {
         search(
-          query: "author:benji011 is:public is:pr is:merged created:>2020-09-20 -repo:benji011/portfolio.benjaminlo.io"
+          query: "author:benji011 is:public is:pr is:merged created:>2020-09-20 -repo:benji011/portfolio.benjaminlo.io -repo:benji011/cool-pictures-of-space"
           type: ISSUE
           first: 12
         ) {
