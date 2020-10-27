@@ -2,7 +2,9 @@
 
 <img width="500px" src="src/assets/screenshots/homepage.png"/>
 
-[![Powered by Digital Ocean](./powered-by-do.svg)](https://www.digitalocean.com?utm_source=benjaminlo)
+<a href="https://www.digitalocean.com?utm_source=benjaminlo">
+  <img src="./powered-by-do.svg" width="300">
+</a>
 
 ## About
 
