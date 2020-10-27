@@ -2,9 +2,7 @@
 
 <img width="500px" src="src/assets/screenshots/homepage.png"/>
 
-<a href="https://www.digitalocean.com?utm_source=benjaminlo">
-  <img src="./powered-by-do.svg" width="300">
-</a>
+[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.com?utm_source=smakosh)
 
 ## About
 
