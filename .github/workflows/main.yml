@@ -18,3 +18,10 @@ jobs:
         run: |
           yarn
           yarn lint:dir src/
+      - name: Bump release version
+      - uses: christian-draeger/increment-semantic-version@1.0.2
+        with:
+          current-version: 'v1.0.3'
+          version-fragment: 'feature'
+      - name: Bump to next version
+        run: echo ${{ steps.bump_version.outputs.next-version }}
