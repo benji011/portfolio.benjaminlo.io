@@ -12,7 +12,7 @@
           "Developed the backend API endpoints & MySQL DB connections using Django & Django Rest Framework.",
           "Implementing & maintaining features for the frontend using Vue.JS & Node.js",
           "Built the REST API service for 3 features (segmented-trends, user-trends, repeat-search) that executes the AWS Athena queries & paginates the results which is then parsed in Django for the frontend.",
-          "Upgraded deprecated packages, severity issues & improved development experience for other developers in other teams (e.g. Modifying Makefiles, upgrade Django 1.11.28 to 1.11.29, urllib3, Python 2.7 to 3.7, creating new Docker images etc)."
+          "Upgraded deprecated packages, severity issues & improved development experience for other developers in other teams (e.g. Modifying Makefiles, upgrade Django 1.11.29 to 3.1.2, urllib3, Python 2.7 to 3.7, creating new Docker images etc)."
         ]
       },
       {
@@ -80,7 +80,7 @@
           "DjangoとDjango Rest Frameworkを使用したバックエンドAPIエンドポイントとMySQL DB上を開発。",
           "Vue.JSとNode.jsを使ったフロントエンドの機能の実装とメンテナンスを実施。",
           "3つの機能(セグメント利用傾向分析、ユーザー利用傾向分析、リピート検索)のREST APIサービスを構築。",
-          "非推奨パッケージのアップグレード、深刻度の問題、開発チームが作業しやすくするための改善（例：Makefileの作成、Django 1.10から1.11、Python 2.7から3.7をアップ、Dockerイメージの新規作成など）。"
+          "非推奨パッケージのアップグレード、深刻度の問題、開発チームが作業しやすくするための改善（例：Makefileの作成、Django 1.11から3.1.2、Python 2.7から3.7をアップ、Dockerイメージの新規作成など）。"
         ]
       },
       {
