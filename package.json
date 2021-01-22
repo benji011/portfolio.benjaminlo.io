@@ -6,7 +6,7 @@
   "author": "Smakosh <ismai23l@hotmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.35",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^6.2.0",
     "emotion": "^10.0.27",
     "formik": "^2.1.4",
