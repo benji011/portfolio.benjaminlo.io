@@ -4,7 +4,6 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Button } from 'components/common';
 import { useTranslation } from 'react-i18next';
 import dev from 'assets/illustrations/code_development_.svg';
-import { css } from '@emotion/core';
 
 import overlayIllustrationDark from 'assets/illustrations/overlay.svg';
 import overlayIllustrationLight from 'assets/illustrations/overlay_light.svg';
@@ -12,7 +11,7 @@ import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const overlay =
     theme === 'light'
       ? `background-image: url(${overlayIllustrationLight});`
