@@ -6,8 +6,17 @@
     "technologies": "Technologies & certs",
     "companies": [
       {
+        "title": "Wolf & Badger - Python Developer",
+        "duration": "2021/07 - Present",
+        "experience": [
+          "Collaborating with the Head of Product, Business Intelligence Engineer and the development team to deliver innovative, efficient and valuable features.",
+          "Working alongside non-technical stakeholders to implement considered solutions that meet complex business requirements.",
+          "Maintaining and improve product/codebase, considering scalability and the end user constantly."
+        ]
+      },
+      {
         "title": "beBit Inc - Full Stack Engineer",
-        "duration": "2018/12 - Present",
+        "duration": "2018/12 - 2021/02",
         "experience": [
           "Developed the backend API endpoints & MySQL DB connections using Django & Django Rest Framework.",
           "Implementing & maintaining features for the frontend using Vue.JS & Node.js",
@@ -53,7 +62,7 @@
       },
       {
         "key": "DevOps",
-        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud"
+        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud, Kafka"
       }
     ],
     "certificates": [
@@ -74,8 +83,17 @@
     "technologies": "技術・スキル・認定",
     "companies": [
       {
+        "title": "Wolf & Badger - Python エンジニア",
+        "duration": "2021/07 - 在職中",
+        "experience": [
+          "製品責任者、ビジネス・インテリジェンス・エンジニア、開発チームと協力して、革新的で効率的で価値のある機能を開発。",
+          "ステークホルダーと協力して複雑なビジネス要件を満たす。",
+          "スケーラビリティとエンドユーザーを常に考慮しながら、製品/コードベースを維持・改善すること"
+        ]
+      },
+      {
         "title": "株式会社ビービット - フルスタックエンジニア",
-        "duration": "2018年12月 - 在職中",
+        "duration": "2018年12月 - 2021年2月",
         "experience": [
           "DjangoとDjango Rest Frameworkを使用したバックエンドAPIエンドポイントとMySQL DB上を開発。",
           "Vue.JSとNode.jsを使ったフロントエンドの機能の実装とメンテナンスを実施。",
@@ -121,7 +139,7 @@
       },
       {
         "key": "インフラ",
-        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud"
+        "items": "AWS DynamoDB, AWS Athena, AWS S3, AWS IAM, Docker, Kubernetes, Google Cloud, Kafka"
       }
     ],
     "certificates": [
