@@ -103,9 +103,18 @@ export const Details = styled.div`
 
 export const Thumbnail = styled.div`
   max-width: 80px;
+  margin: auto;
 
   img {
     border-radius: 50%;
     border: 3px solid rgb(216, 216, 216);
+  }
+`;
+
+export const DetailsHeader = styled.div`
+  text-align: center;
+
+  h2 {
+    text-align: left;
   }
 `;
