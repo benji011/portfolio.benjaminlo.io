@@ -18,5 +18,15 @@
     "header": "A very versatile engineer, he was requested and used in roles that could not be filled by other software engineers..",
     "testimonial": "I had the pleasure of working with Ben through my time at beBit. A very versatile engineer, he was requested and used in roles that could not be filled by other software engineers. For example, he was often assigned to task force groups to solve problems outside of the traditional development roadmap for the core product (ex. how to retrofix fixes onto legacy and current products to support or workaround compliance with ITP 2.3 and new browser privacy measures). Additionally, his Japanese is good enough that we could confidently pair him with either non-Japanese engineers or all Japanese language work groups... including those that comprised of mainly non-technical people.\n\nBen was a good team player, and was respected by all of his colleagues. Additionally, because his position was remote, he was extremely good and proactive regarding communication (via the usual methods such as Slack, Zoom, etc) and very few people in the Tokyo headquarters would notice that he wasn't actually physically present.\n\nFinally, his code quality was good in the eyes of reviewers, and he was very good at providing feedback on other people's PRs as well as providing advice and leading by example in the eyes of more junior software engineers. ",
     "linkedin": "https://www.linkedin.com/in/havill/"
+  },
+  {
+    "id": 2,
+    "image": "icons/testimonials/2.png",
+    "name": "Daniel Arathoon",
+    "company": "Freelance",
+    "role": "3D Artist",
+    "header": "He has all the characteristic of a good team leader, setting schedule, assigning tasks..",
+    "testimonial": "I had the pleasure of working with Ben for a game project. He always had a clear vision of how he wanted the project to turn out. He has all the characteristic of a good team leader, setting schedule, assigning tasks, knowing strengths and weakness of his coworkers. \n\nNo matter the task, he is able to problem solve and help his coworkers. Asides from work, he is also very friendly and down to earth type of person. I would recommend him as a team leader for any project.",
+    "linkedin": "https://www.linkedin.com/in/daniel-arathoon-b2922121/"
   }
 ]
