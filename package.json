@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "axios": "^0.21.1",
+    "cypress": "^8.5.0",
     "dotenv": "^6.2.0",
     "emotion": "^10.0.27",
     "formik": "^2.1.4",
@@ -55,7 +56,7 @@
     "lint:dir": "eslint ",
     "lint:fix": "yarn prettier --write ",
     "reset": "rm -rf .cache/ public/",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "e2e:cypress": "./node_modules/.bin/cypress open"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
