@@ -14,7 +14,7 @@ describe('E2E tests', () => {
         cy.get('#contact')
             .should('be.visible');
     });
-    it.only('checks if form validation works during typing', () => {
+    it('checks if form validation works during typing', () => {
         cy.get(':nth-child(1) > .Input-eXLwAq')
             .type("J{backspace}")
             .blur();
