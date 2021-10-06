@@ -16,6 +16,15 @@
         "printWidth": 120,
         "tabWidth": 2
       }
+    ],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "line": {
+          "markers": ["/"]
+        }
+      }
     ]
   },
   "settings": {
