@@ -1,5 +1,8 @@
 {
-  "extends": ["wesbos"],
+  "plugins": [
+    "cypress"
+  ],
+  "extends": ["wesbos", "plugin:cypress/recommended"],
   "rules": {
     "no-console": 2,
     "import/no-unresolved": 0,
@@ -12,6 +15,15 @@
         "singleQuote": true,
         "printWidth": 120,
         "tabWidth": 2
+      }
+    ],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "line": {
+          "markers": ["/"]
+        }
       }
     ]
   },

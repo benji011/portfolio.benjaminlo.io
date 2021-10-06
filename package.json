@@ -55,16 +55,18 @@
     "lint:dir": "eslint ",
     "lint:fix": "yarn prettier --write ",
     "reset": "rm -rf .cache/ public/",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "e2e:cypress": "./node_modules/.bin/cypress open"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "babel-plugin-styled-components": "^1.10.6",
+    "cypress": "^8.5.0",
     "eslint": "^5.14.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-wesbos": "0.0.19",
     "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-html": "^5.0.3",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
