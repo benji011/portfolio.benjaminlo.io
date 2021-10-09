@@ -37,8 +37,8 @@ export const Intro = () => {
     <Wrapper css={overlay}>
       <IntroWrapper as={Container}>
         <Details theme={theme}>
-          <h1>{t('intro:Hi there!')}</h1>
-          <h4>{t('intro:I’m Ben and I’m a full stack engineer!')}</h4>
+          <h1>{t("intro:Hi, I'm Ben!")}</h1>
+          <h4>{t('intro:A Senior Software Engineer who is passionate for excellence')}</h4>
           <Button css={button} as={AnchorLink} href="#contact">
             {t('intro:Contact me')}
           </Button>
