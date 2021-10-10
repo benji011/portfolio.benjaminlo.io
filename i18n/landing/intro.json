@@ -1,12 +1,12 @@
 {
   "en": {
-    "Hi there!": "Hi there!",
-    "I’m Ben and I’m a full stack engineer!": "I’m Ben and I’m a full stack engineer!",
+    "Hi, I'm Ben!": "Hi, I'm Ben!",
+    "A Senior Software Engineer who is passionate for excellence": "A Senior Software Engineer who is passionate for excellence",
     "Contact me": "Contact me"
   },
   "ja": {
-    "Hi there!": "こんにちは！",
-    "I’m Ben and I’m a full stack engineer!": "フルスタックエンジニア、Benです！",
+    "Hi, I'm Ben!": "どうも、Benです！",
+    "A Senior Software Engineer who is passionate for excellence": "常に完璧を求めるシニアソフトウェアエンジニア",
     "Contact me": "お問い合わせ"
   }
 }

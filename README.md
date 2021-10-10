@@ -8,10 +8,18 @@
 
 My personal portfolio website forked from [Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio) by [Smakosh](https://github.com/smakosh)
 
+## Tests
+
+All tests are run using Cypress. You can either run them through the browser or with headless mode using the CLI. Please refer to the commands below, which can also be found in [package.json](./package.json):
+
+```bash
+e2e:cypress:browser
+# Or
+e2e:cypress:headless
+```
+
 ## TODO
 
-- ~fix i18n internationalization. See branch [wip/portfolio-ben-i18n](https://github.com/benji011/portfolio.benjaminlo.io/tree/wip/portfolio-ben-i18n) for more details~
-- ~E2E tests~
 - fix hamburger icon colour
 - ~fix ESLint~
 - refactor some weird looking code
@@ -24,6 +32,7 @@ Author of template - Ismail Ghallou (@Smakosh)
 
 - [martink-rsa](https://github.com/martink-rsa) - https://github.com/benji011/portfolio.benjaminlo.io/pull/9
 - [ankitbeniwal](https://github.com/ankitbeniwal) - https://github.com/benji011/portfolio.benjaminlo.io/pull/22
+- [TheLaw1337](https://github.com/TheLaw1337)- https://github.com/benji011/portfolio.benjaminlo.io/pull/51
 
 ## License (What you can & cannot use)
 
