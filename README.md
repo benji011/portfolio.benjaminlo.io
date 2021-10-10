@@ -32,6 +32,7 @@ Author of template - Ismail Ghallou (@Smakosh)
 - [martink-rsa](https://github.com/martink-rsa) - https://github.com/benji011/portfolio.benjaminlo.io/pull/9
 - [ankitbeniwal](https://github.com/ankitbeniwal) - https://github.com/benji011/portfolio.benjaminlo.io/pull/22
 - [TheLaw1337](https://github.com/TheLaw1337)- https://github.com/benji011/portfolio.benjaminlo.io/pull/51
+- [sano2019 ](https://github.com/sano2019) - https://github.com/benji011/portfolio.benjaminlo.io/pull/57
 
 ## License (What you can & cannot use)
 
